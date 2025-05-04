@@ -1,0 +1,81 @@
+\subsection{The Chain Rule}
+
+\content{
+\begin{theorem} (The Chain Rule Version 1) Let $f(x,y)$ be a differentiable
+function, and $x=g(t)$ and $y=h(t)$ are both differentiable functions. Then 
+$$ \frac{df}{dt} = \frac{\del f}{\del x}\frac{dx}{dt} + \frac{\del f}{\del
+y}\frac{dy}{dt}. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} If $z=x^2y+3xy^4$ where $x=\cos t$ and $y=\sin 3t$, find
+$\frac{dz}{dt}$ at $t=0$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{theorem} (The Chain Rule Version 2) Let $f(x,y)$ be a differentiable
+function where $x=g(s,t)$ and $y=h(s,t)$ are both differentiable function of two
+variables, then 
+$$ \frac{\del f}{\del s} = \frac{\del f}{\del x}\frac{\del x}{\del s} + 
+\frac{\del f}{\del y} \frac{\del y}{\del s}\quad 
+\frac{\del f}{\del t} = \frac{\del f}{\del x}\frac{\del x}{\del t} + 
+\frac{\del f}{\del y} \frac{\del y}{\del t}. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} If $z=e^x\sin y$ and $x=st^2$ and $y=s^2t$, find both 
+$ \del z/\del s$ and $\del z/\del t$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} If $z = f(x,y)$ has continuous second-order partial derivatives, and $x=s^2+t^2$
+and $y=2st$, find expressions for $\del z/\del s$ and $\del^2z/\del^2 s$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\subsubsection{Implicit Differentiation}
+
+\content{
+We can use the chain rule to obtain an application to implicit differentiation
+from Calculus I:
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Write out $F(x,y) = 0$, and assume that $y=y(x)$, and use the chain rule to
+obtain 
+$$ \frac{\del F}{\del x}\frac{dx}{dx} + \frac{\del F}{\del y}\frac{dy}{dx} = 0.
+$$
+Then since $\frac{dx}{dx}=1$, we can solve for $\frac{dy}{dx}$.
+}
+
+\content{
+\begin{example} Find $y'$ is $x^3+y^3 = 6xy$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
