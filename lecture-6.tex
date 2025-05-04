@@ -1,0 +1,187 @@
+\subsection{Functions of Several Variables}
+
+\content{
+\begin{definition} A function of two variables is a rule which assigns to
+each ordered pair of real numbers $(x,y)$ from a given domain $D$, which is
+denoted $f(x,y)$. The set $D$ is known as the domain, and it's range is the set
+of real values obtained as output of $f$.
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+$x$ and $y$ are known as the independent variables, and $z=f(x,y)$ is the
+dependent variable. 
+}
+
+\content{
+\begin{example}
+For the following function, evaluate $f(3,2)$ and find and sketch the domain.
+$$ f(x,y) = \frac{\sqrt{x+y+1}}{x-1}. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the domain of the function 
+$$ f(x,y) = \sqrt{9-x^2-y^2}. $$
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\subsubsection{Graphs}
+
+\content{
+\begin{definition} If $f$ is a function of two variables with domain $D$, then
+the graph of $f$ is the set of all points $(x,y,z)$ in $\R^3$ such that
+$z=f(x,y)$ and $(x,y)$ is in $D$.
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example}
+Sketch the graph of the function $f(x,y)=6-3x-2y$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Start with the intercepts of all three axis, then since this equation defines a
+plane, simply draw the triangle between these three points. 
+}
+
+\content{
+Naturally, the graphs of functions of two varialbes can be very complicated. 
+% maybe some examples here. 
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Draw several level curves of the function 
+$$ f(x,y) = 6-3x-2y. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Draw several level curves of the function 
+$$ f(x,y) = 4x^2+y^2+1. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\subsection{Limits and Continuity}
+
+\content{
+Much as in the case of function of a single variable, we can take limits of
+functions of two variables. Here is the formal definition:
+\begin{definition} If $f(x,y)$ is a function of two variables, and $(a,b)$ is a
+point in the interior of the domain $D$ of $f$, then we say that the limit of
+$f(x,y)$ as $(x,y)$ approaches $(a,b)$ is $L$ if for every number $\epsilon >
+0$, there exists a $\delta>0$ such that whenever 
+$$ \sqrt{(x-a)^2+(y-b)^2}< \delta, $$
+we have that $|f(x,y)-L|<\epsilon$, and we write 
+$$ \lim_{(x,y) \rightarrow (a,b)} f(x,y) = L. $$
+\end{definition}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+draw a diagram of this definition, and what it means for a limit to exist. 
+
+Also, mention that unlike functions of one variable, we have infinitely ways of
+approaching the point $(a,b)$. 
+}
+
+\content{
+\begin{example} Show that the following limit does not exist:
+$$ \lim_{(x,y)\rightarrow (0,0)} \frac{x^2-y^2}{x^2+y^2}. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Mention that to show that a limit does not exist, we only need to find two paths
+for which the limit does not agree. 
+}
+
+\content{
+\begin{theorem} The properties of the limit which hold for functions of a single
+variable also hold for functions of two variables: 
+\begin{enumerate}
+\item The limit of a sum is the sum of the limits. 
+\item THe limit of a difference is the difference of the limits. 
+\item The limit of a constant times a function is the constant times the limit
+of the function. 
+\item The limit of a product is the product of the limits. 
+\item The limit of a quotient is the quotient of the limits, provided that the
+limit of the denominator is not zero. 
+\end{enumerate}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{definition} A function $f$ of two variables is called continuous at
+$(a,b)$ if 
+$$ \lim_{(x,y)\rightarrow (a,b)} f(x,y) = f(a,b). $$
+We say that $f$ is continous on $D$ is $f$ is continuous at each point of $D$. 
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+Note that polynomials are continuous, so are rational functions (on their
+domain). 
+}
+
+\content{
+\begin{example} Find the following limit, if it exists:
+$$\lim_{(x,y)\rightarrow (0,0)} \frac{x^2y+1}{x^3y^2-2x}. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example}
+Where is the function 
+$$ f(x,y) = \frac{3x^2y}{x^2+y^2} $$
+continuous? 
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Show that the function 
+$$ f(x,y) = e^{-x^2-y^2} $$
+is continuous everywhere. 
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+This is shown by using the fact that a composition of continuous functions is
+continuous. 
+}
