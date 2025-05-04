@@ -3,7 +3,7 @@
 \content{
 \begin{theorem} (The Chain Rule Version 1) Let $f(x,y)$ be a differentiable
 function, and $x=g(t)$ and $y=h(t)$ are both differentiable functions. Then 
-$$ \frac{df}{dt} = \frac{\del f}{\del x}\frac{dx}{dt} + \frac{\del f}{\del
+$$ \frac{df}{dt} = \frac{\partial f}{\partial x}\frac{dx}{dt} + \frac{\partial f}{\partial
 y}\frac{dy}{dt}. $$
 \end{theorem}
 }{% presentation
@@ -25,10 +25,10 @@ $\frac{dz}{dt}$ at $t=0$.
 \begin{theorem} (The Chain Rule Version 2) Let $f(x,y)$ be a differentiable
 function where $x=g(s,t)$ and $y=h(s,t)$ are both differentiable function of two
 variables, then 
-$$ \frac{\del f}{\del s} = \frac{\del f}{\del x}\frac{\del x}{\del s} + 
-\frac{\del f}{\del y} \frac{\del y}{\del s}\quad 
-\frac{\del f}{\del t} = \frac{\del f}{\del x}\frac{\del x}{\del t} + 
-\frac{\del f}{\del y} \frac{\del y}{\del t}. $$
+$$ \frac{\partial f}{\partial s} = \frac{\partial f}{\partial x}\frac{\partial x}{\partial s} + 
+\frac{\partial f}{\partial y} \frac{\partial y}{\partial s}\quad 
+\frac{\partial f}{\partial t} = \frac{\partial f}{\partial x}\frac{\partial x}{\partial t} + 
+\frac{\partial f}{\partial y} \frac{\partial y}{\partial t}. $$
 \end{theorem}
 }{% presentation
 }{% nopresentation
@@ -37,7 +37,7 @@ $$ \frac{\del f}{\del s} = \frac{\del f}{\del x}\frac{\del x}{\del s} +
 
 \content{
 \begin{example} If $z=e^x\sin y$ and $x=st^2$ and $y=s^2t$, find both 
-$ \del z/\del s$ and $\del z/\del t$.
+$ \partial z/\partial s$ and $\partial z/\partial t$.
 \end{example}
 }{% presentation
 \vspace{4in}
@@ -47,7 +47,7 @@ $ \del z/\del s$ and $\del z/\del t$.
 
 \content{
 \begin{example} If $z = f(x,y)$ has continuous second-order partial derivatives, and $x=s^2+t^2$
-and $y=2st$, find expressions for $\del z/\del s$ and $\del^2z/\del^2 s$.
+and $y=2st$, find expressions for $\partial z/\partial s$ and $\partial^2z/\partial^2 s$.
 \end{example}
 }{% presentation
 \vspace{4in}
@@ -66,7 +66,7 @@ from Calculus I:
 }{% comments
 Write out $F(x,y) = 0$, and assume that $y=y(x)$, and use the chain rule to
 obtain 
-$$ \frac{\del F}{\del x}\frac{dx}{dx} + \frac{\del F}{\del y}\frac{dy}{dx} = 0.
+$$ \frac{\partial F}{\partial x}\frac{dx}{dx} + \frac{\partial F}{\partial y}\frac{dy}{dx} = 0.
 $$
 Then since $\frac{dx}{dx}=1$, we can solve for $\frac{dy}{dx}$.
 }
