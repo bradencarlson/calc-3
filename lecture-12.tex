@@ -1,0 +1,233 @@
+\subsection{Double Integrals over Rectangles}
+
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Recall definition for single integrals of single variate functions, then draw a
+surface over a rectangle and demonstrate the definition of the double integral
+over a rectangle. 
+}
+
+\content{
+\begin{definition} The double integral of the function $f$ over the rectangle
+$R$ is defined to be
+$$ \iint_R f(x,y)\,dA= \lim_{m,n\rightarrow \infty} \sum_{i=1}^n\sum_{j=1}^m
+f(x_i,y)j)\Delta A, $$
+if this limit exists. 
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+Mention that just like the single variable case gives us the area, the double
+integral gives the volume. 
+}
+
+\content{
+\begin{example} Approximate the volume of the region above the $x,y$-plane and
+below the surface $z=16-x^2-2y^2$ over the region $R=[0,2]\times[0,2]$. 
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Sketch the region and surface
+
+Use $m=n=1$ (so four rectangles) to approximate this. 
+
+\textbf{Mention that the definition is very difficult to work with, but luckily
+we have Fubini's Theorem to help us evaluate double integrals. }
+}
+
+\content{
+\begin{theorem} (Fubini's Theorem) If $f$ is continuous on the rectangle 
+$R=[a,b]\times[c,d]$, then 
+$$ \iint_Rf(x,y)\,dA = \int_a^b\int_c^d f(x,y) dydx = \int_c^d\int_a^b f(x,y)
+dxdy. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+Mention that the right two are called iterated integrals. 
+}
+
+\content{
+\begin{example} Evaluate the iterated integral
+$$ \int_0^2\int_1^2 (x-3y^2)dydx. $$
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Answer is -12.
+}
+
+\content{
+\begin{example} Evaluate 
+$$ \iint_R y\sin(xy)\,dA$$
+where $R = [1,2]\times[0,\pi]$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Mention that if we integrate with respect to $y$ first, this is very difficult,
+so there may be one of the integrals in Fubini's Theorem which is easier than
+the other. 
+}
+
+\content{
+\begin{example} Find the exact volume in the first example. That is, find the
+volume beneath the surface $z=16-x^2-2y^2$ over the rectangle
+$R=[0,2]\times[0,2]$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Volume: 48
+}
+
+\subsubsection{Average Value}
+\content{
+\begin{definition} The average value of the function $f(x,y)$ over the rectangle
+$R$ is defined by 
+$$ f_{avg} = \frac{1}{A(R)} \iint_R f(x,y)\, dA, $$
+where $A(R)$ is the area of the rectangle $R$. 
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the average value of the function 
+$$ f(x,y) = x^2-2y^2 $$
+over the rectangle $R=[-1,1]\times[-1,1]$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\subsection{Double Integrals on General Regions}
+
+\content{
+\begin{definition} Let $f(x,y)$ be a function defined on $D$, which is bounded.
+Let $R$ be a rectangle which contains $D$. Define the function 
+$$ F(x,y) = \begin{cases} f(x,y) & (x,y)\in D \\ 0 & (x,y) \not\in D \end{cases}
+$$
+We then define the integral of $f$ over $D$ as
+$$\iint_D f(x,y)\, dA = \iint_R F(x,y)\, dA. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+of course, this definition does not tell us how to evaluate the integral. 
+}
+
+\content{
+
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Introduce regions of Type I:
+$$D = \{(x,y): a\leq x\leq b, g_1(x)\leq y\leq g_2(x)\}. $$
+And how we integrate functions over these regions:
+$$\int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\, dydx. $$
+This can be found using the definition and Fubini's Theorem. 
+}
+
+\content{
+\begin{example} Find the volume of the solid that lies under the paraboloid
+$z=x^2+y^2$ and above the region $D$ which is given by 
+$$ D = \{(x,y): 0\leq x\leq 2, 0\leq y\leq x\}. $$
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Introduce Type II Regions: 
+$$ D = \{(x,y): g_1(y)\leq x\leq g_2(y), a\leq y\leq b\}. $$
+and how we integrate over them. 
+}
+
+\content{
+\begin{example} Find the volume of the solid which lies under the paraboloid 
+$$ z = 4-x^2-y^2, $$
+and lies above the region 
+$$ D = \{(x,y): x^2+y^2\leq 4\}$$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Evaluate 
+$$ \iint_D xy\, dA, $$
+where $D$ is the region bounded by the lien $y=x-1$ and the parabola 
+$y^2=2x+6$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+answer: 36
+}
+
+\subsubsection{Changing the Order of Integration}
+
+\content{
+\begin{example} Evaluate the integral 
+$$ \int_0^1\int_x^1 \sin(y^2) dydx. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Draw a diagram of the region to switch the bounds to $x$ first. 
+}
+
+\content{
+\begin{example} Evaluate the integral 
+$$ \int_0^1\int_{3y}^3 e^{x^2} \, dxdy. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{theorem} (Properties of Double Integrals) 
+\begin{enumerate} 
+\item $\iint_D (f_1(x,y) + f_2(x,y))\,dA = \iint_D f_1(x,y)\,dA + \iint_D
+f_2(x,y)\, DA. $
+\item $\iint_D cf(x,y)\,dA = c\iint_D f(x,y)\,dA. $
+\item $\iint_D f(x,y)\, dA = \iint_{D_1} f(x,y)\,dA + \iiint_{D_2} f(x,y)\,dA $,
+where $D =D_1\cup D_2$ and $D_1$ and $D_2$ do not overlap, except possibly on
+their boundaries. 
+\item $\iint_D 1\, dA = A(D)$. 
+\item If $m\leq f(x,y)\leq M$ on $D$, then 
+$mA(D)\leq \iint_D f(x,y)\, dA\leq MA(D). $
+\end{enumerate}
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
