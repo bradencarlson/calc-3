@@ -1,0 +1,80 @@
+\subsection{Double Integrals in Polar Coordinates}
+
+
+\content{
+
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Review polar coordinates, go over how the extra r shows up in the integration:
+\begin{enumerate}
+\item draw a basic region
+\item draw sectors based on $\Delta \theta$ and $\Delta r$
+\item show that the area of each polar rectangle is given by 
+$$\Delta A_i = \frac{1}{2}(r_i^2-r_{i-1}^2)\Delta \theta$$
+by using the difference of the areas of two sectors of a circle
+\item use the fact that $r_i^* = \frac{1}{2}(r_i+r_{i-1})$ is the center point
+of each polar rectangle to show that the area is 
+$$ \Delta A_i = r_i^* \Delta r \Delta \theta$$
+\end{enumerate}
+}
+
+\content{
+\begin{theorem} If $f$ is a continuous function on a polar rectangle $R$ given
+by $a\leq \theta\leq b$ and $\alpha\leq r\leq \beta$, then 
+$$ \iint_Rf(x,y)\,dA = \int_\alpha^\beta\int_a^b rf(r\cos\theta,
+r\sin\theta)\,d\theta dr. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Evaluate the integral 
+$$ \iint_R (3x+4y^2)\,dA $$
+where $R$ is the region in the upper-half plane bounded by the circles
+$x^2+y^2=1$ and $x^2+y^2=4$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the volume of the solid bounded by the plane $z=0$ and the
+surface $z=1-x^2-y^2$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Use a double integral to find the area of the region enclosed by
+one loop of the function $r=\cos 2\theta$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} FInd the volume of the solid that lies in the cylinder
+$x^2+y^2=2x$ and between the $xy$-plane and the surface $z=x^2+y^2$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Complete the square in the cylinder equation to find it's center and radius
+then set $x=r\cos\theta$ and substitute this into the cylinder equation (and
+$r^2=x^2+y^2$)
+
+Mention that we will be skipping 15.4, which contains many applications of
+double integrals. 
+}
