@@ -1,0 +1,204 @@
+\subsection{Vector Fields}
+
+\content{
+\begin{definition} Let $D$ be a set in $\R^2$. A vector field on $D$ is a
+function $\myvec{F}$ which assigns to each point in $D$, a two dimensional
+vector $\myvec{F}(x,y)$.
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Draw a sketch of how we visualize these. 
+}
+
+\content{
+\begin{definition} Let $E$ be a subset of $\R^3$. A vector field on $E$ is a
+function $\myvec{F}$ which to each point of $E$ assigns a three dimensional
+vector $\myvec{F}(x,y,z)$.
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+sketch again. 
+}
+
+\content{
+\begin{example} Sketch the vector field on $\R^2$ defined by 
+$\myvec{F}(x,y) = \la -y, x\ra. $. 
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Mention that this is frequently denoted 
+$$\myvec{F}(x,y) = -y\myvec{i}+x\myvec{j}. $$
+}
+
+\content{
+\begin{example} Sketch the vector field given by $\myvec{F}(x,y,z) =
+z\myvec{k}$. 
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+}
+
+
+\subsubsection{Gradient Fields}
+\content{
+Recall that if $f$ is a function of two variables $x$ and $y$, then the gradient
+of $f$ is defined to be
+$$ \nabla f(x,y) = \la f_x(x,y), f_y(x,y)\ra. $$
+Thus, $\nabla f$ is really a vector field, and is called a gradient vector
+field. 
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Sketch the gradient vector field of the function $f(x,y) =
+x^2y-y^3. $
+\end{example}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\subsection{Line Integrals}
+
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Introduce the concept of a line integral. Derive the Reimann Sum 
+$$ \sum_{i=1}^n f(x_i^*,y_i^*)\Delta s_i $$
+}
+
+\content{
+\begin{theorem} If $f$ is continuous, and $C$ is a smooth curve, then 
+$$ \int_C f(x,y)\, ds = \int_a^b f(x(t),y(t))\sqrt{x'(t)^2+y'(t)^2}\,dt. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Evaluate the integral $\int_C (2+x^2y)\,ds$ where $C$ is the
+upper half of the unit circle. 
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Answer: $2\pi+\frac{2}{3}$. 
+}
+
+\content{
+\begin{example} Evaluate the integral $\int_C 2x\,ds$ where $C$ consists of the
+arc $C_1$ of the parabola $y=x^2$ from $(0,0)$ to $(1,1)$ followed by the
+vertical line segment $C_2$ from $(1,1)$ to $(1,2)$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\subsubsection{Integrals with Respect to $x$ or $y$}
+
+\content{
+\begin{theorem} The Line integrals with respect to $x$ and $y$ are given by 
+$$ \int_C f(x,y)dx = \int_a^b f(x(t),y(t))x'(t)\,dt, $$
+and 
+$$ \int_C f(x,y)dy = \int_a^b f(x(t),y(t))y'(t)\,dt. $$
+\end{theorem}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+We will see that these often occur together, in which case we usually use the
+following abbreviation: 
+\begin{eqnarray*}\int_C P(x,y)dx+\int_C Q(x,y)dy = \\
+\int_C P(x,y)dx+Q(x,y)dy. \end{eqnarray*}
+}
+
+\content{
+\begin{example} Evaluate the integral $\int_Cy^2dx+xdy$ where $C$ is the line
+segment from $(-5,-3)$ to $(0,2)$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+We have a similar formula for line integrals in space: 
+$$ \int_C f(x,y,z)\, ds = \int_a^b f(x(t),y(t),z(t))\sqrt{x'(t)^2+
+y'(t)^2+z'(t)^2}\,dt. $$
+This (and the formula for line integrals in the plane) can be written in the
+more compact form 
+$$ \int_C f\, ds = \int_C f(\myvec{r}(t))|\myvec{r}'(t)|\, dt. $$
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Evaluate the line integral $\int_C ydx+zdy+xdz$ where $C$ is the
+line segment from $(2,0,0)$ to $(3,4,5)$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\subsubsection{Line Integrals of Vector Fields and Work}
+\content{
+
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Derive the Riemann Sum for the work done by the force field $\myvec{F}$ in
+moving a particle along the path $C$: 
+$$\sum_{i=1}^n [\myvec{F}(x_i^*,y_i^*,z_i^*)\cdot
+\myvec{T}(x_i^*,y_i^*,z_i^*)]\Delta s_i. $$
+Do this by finding the component of $\myvec{F}(x_i^*,y_i^*,z_i^*)$ in the
+direction of $\myvec{r}'(t)$. 
+}
+
+\content{
+\begin{definition} We define the work done by $\myvec{F}$ in moving a particle
+along the curve $C$ by 
+$$ W = \int_C \myvec{F}(x,y,z)\cdot \myvec{T}(x,y,z)\,ds=\int_C \myvec{F}\cdot
+\myvec{T}\,ds.  $$
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+If the curve is parametrized by $\vec{r}(t)$, derive the formula 
+$$ W = \int_a^b f(\myvec{r}(t))\cdot \myvec{r}'(t)\,dt $$
+which is denoted 
+$$\int_C f(\myvec{r}(t))\cdot d\myvec{r}. $$
+}
+
+\content{
+\begin{example} Find the work done by the force field
+$\myvec{F}(x,y) = \la x^2, -xy\ra $ in moving a particle along the
+quarter-circle $\myvec{r}(t) = \la \cos t,\sin t\ra$ $0\leq t\leq \pi/2$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
