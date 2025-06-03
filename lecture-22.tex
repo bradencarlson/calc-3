@@ -59,9 +59,71 @@ Since this has a simple representation in cylindrical coordinates, we shall use
 those. 
 }
 
+\subsubsection{Tangent Planes}
+
 \content{
 
 }{% presentation
+\vspace{4in}
 }{% nopresentation
 }{% comments
+Go over how the normal vector of the tagent plane is derived.  the normal vector
+is given by 
+$$ \vec{r}_u \times \vec{r}_v. $$
+Mention that a surface is called smooth if this vector is never the zero vector. 
+}
+
+\content{
+\begin{example} Find the tangent plane to the surface with parametric equations
+$x=u^2$, $y=v^2$, and $z=u+2v$ at the point $(1,1,3)$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Normal vector is $\la -2u, -4u, 4uv\ra. $
+}
+
+\subsubsection{Surface Area}
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Go over the derivation of the Riemann Summ for the surface area
+}
+
+\content{
+\begin{definition} If a smooth parametric surface $S$ is given by the equation 
+$$ \vec{r}(u,v) = \la x(u,v) , y(u,v), z(u,v) \ra, $$
+and $S$ is covered just once as $(u,v)$ ranges throughout a region $D$, then the
+surface area of $S$ is
+$$ A(S) =\iint_D |\vec{r}_u\times \vec{r}_v|\,dA. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the surface area of a sphere of radius $a$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the surface area of the part of the paraboloid $z=x^2+y^2$
+which lies under the plane $z=9$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Go over how for a regular surface parametrized by $x$ and $y$, we still use the
+above fomula. (this is derived in the textbook as a separate formula to
+remember)
 }
