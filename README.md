@@ -1,0 +1,27 @@
+# Lectures Outline
+
+- Three dimensional coordinate systems and vectors
+- the dot product
+- lines and planes, distances, cylinders and quadric surfaces
+- vector functions, calculus with vector functions, motion in space
+- Arc Length, TNB vectors
+- Functions of several variables, limits and continuity
+- Partial derivatives, tangent planes and linear approximations, differentials
+- Chain rule, implicit differentiation
+- Directional derivatives and gradient vector, tangent plances
+- Maximum and minimum values
+- Lagrange multipliers
+- double integrals over rectangles, average value, double integrals over general
+  regions, changing the order of integration
+- Double integrals in polar coordinates
+- triple integrals
+- triple integrals in cylidrical coordinates
+- triple integrals in spherical coordinates
+- change of variables in multiple integrals
+- vector fields, line integrals
+- Fundamental theorem of line integrals, 
+- Green's theorem
+- Curl and Divergence
+- parametric surfaces and their area
+- surface integrals, oriented surfaces, flux
+- Stoke's Theorem, Divergence theorem
