@@ -1,7 +1,7 @@
 # Lectures Outline
 
 - Three dimensional coordinate systems and vectors
-- the dot product
+- the dot product and cross product
 - lines and planes, distances, cylinders and quadric surfaces
 - vector functions, calculus with vector functions, motion in space
 - Arc Length, TNB vectors
