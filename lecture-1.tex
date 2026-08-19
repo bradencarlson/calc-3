@@ -1,0 +1,164 @@
+\subsection{Three Dimensional Coordinate Systems}
+
+\content{
+}{% presentation
+\usetikzlibrary{3d}
+\hfill\begin{tikzpicture}[x={(-135:.9cm)}, y={(0:1cm)}, z={(90:1cm)}]
+\draw[->] (0,0,0) -- (3.4,0,0);
+\draw[->] (0,0,0) -- (0,3.4,0);
+\draw[->] (0,0,0) -- (0,0,3.4);
+\foreach \x/\xlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(\x,-.1,0)--(\x,.1,0);
+    \node at (\x,0,0) [left=3pt] {\xlabel};
+}
+\foreach \y/\ylabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(-.1,\y,0)--(.1,\y,0);
+    \node at (0,\y,0) [above=3pt] {\ylabel};
+}
+\foreach \z/\zlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(0,-.1,\z)--(0,.1,\z);
+    \node at (0,0,\z) [left=3pt] {\zlabel};
+}
+\vspace{.5in}
+\end{tikzpicture}
+}{% nopresentation
+}{% comments
+We describe 3-dimensional space by picking an origin, and three perpendicular
+axis, namely $x$, $y$, and $z$-axis.  these must follow the right hand rule. 
+
+For any point in 3-dimentional space, these three axis give us a way to describe
+where that point is, namely a magnitude in each of the three directions of the
+axes. We call this the coordinate of the point. 
+
+\textbf{Give an example of plotting a point in 3-space.}
+}
+
+\content{
+\subsubsection{Surfaces and Solids}
+\begin{example} Describe the surfaces defined by the following equations. 
+\begin{itemize}
+    \item $z=3$
+    \item $y=5$
+\end{itemize}
+\end{example}
+}{% presentation
+\usetikzlibrary{3d}
+\begin{tikzpicture}[x={(-135:.9cm)}, y={(0:1cm)}, z={(90:1cm)}]
+\draw[->] (0,0,0) -- (3.4,0,0);
+\draw[->] (0,0,0) -- (0,3.4,0);
+\draw[->] (0,0,0) -- (0,0,3.4);
+\foreach \x/\xlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(\x,-.1,0)--(\x,.1,0);
+    \node at (\x,0,0) [left=3pt] {\xlabel};
+}
+\foreach \y/\ylabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(-.1,\y,0)--(.1,\y,0);
+    \node at (0,\y,0) [above=3pt] {\ylabel};
+}
+\foreach \z/\zlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(0,-.1,\z)--(0,.1,\z);
+    \node at (0,0,\z) [left=3pt] {\zlabel};
+}
+\vspace{.5in}
+\end{tikzpicture}
+% second diagram for the other problem
+\usetikzlibrary{3d}
+\hspace{.5in}\begin{tikzpicture}[x={(-135:.9cm)}, y={(0:1cm)}, z={(90:1cm)}]
+\draw[->] (0,0,0) -- (3.4,0,0);
+\draw[->] (0,0,0) -- (0,3.4,0);
+\draw[->] (0,0,0) -- (0,0,3.4);
+\foreach \x/\xlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(\x,-.1,0)--(\x,.1,0);
+    \node at (\x,0,0) [left=3pt] {\xlabel};
+}
+\foreach \y/\ylabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(-.1,\y,0)--(.1,\y,0);
+    \node at (0,\y,0) [above=3pt] {\ylabel};
+}
+\foreach \z/\zlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(0,-.1,\z)--(0,.1,\z);
+    \node at (0,0,\z) [left=3pt] {\zlabel};
+}
+\vspace{.5in}
+\end{tikzpicture}
+}{% nopresentation
+}{% comments
+Mention that in 2-dimensional geometry, graphs of equations involving $x$ and
+$y$ are curves in the plane, while here, graphs of equations involving $x$, $y$,
+and $z$ are surfaces. 
+}
+
+\content{
+\begin{example} Describe the set of points which satisfy the two equations
+$$ x^2+y^2=1 \quad \text{and}\quad z=3. $$
+\end{example}
+}{% presentation
+\usetikzlibrary{3d}
+\hfill\begin{tikzpicture}[x={(-135:.9cm)}, y={(0:1cm)}, z={(90:1cm)}]
+\draw[->] (0,0,0) -- (3.4,0,0);
+\draw[->] (0,0,0) -- (0,3.4,0);
+\draw[->] (0,0,0) -- (0,0,3.4);
+\foreach \x/\xlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(\x,-.1,0)--(\x,.1,0);
+    \node at (\x,0,0) [left=3pt] {\xlabel};
+}
+\foreach \y/\ylabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(-.1,\y,0)--(.1,\y,0);
+    \node at (0,\y,0) [above=3pt] {\ylabel};
+}
+\foreach \z/\zlabel in {.5/1,1/2,1.5/3,2/4,2.5/5,3/6} {
+    \draw(0,-.1,\z)--(0,.1,\z);
+    \node at (0,0,\z) [left=3pt] {\zlabel};
+}
+\vspace{.5in}
+\end{tikzpicture}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{definition} (Distance Formula) Given two points $P_1(x_1,y_1,z_1)$ and 
+$P_2(x_2,y_2,z_2)$, the distance between them is 
+$$ d(P_1,P_2) = \sqrt{(x_1-x_2)^2+ (y_1-y_2)^2+(z_1-z_2)^2}. $$
+\end{definition}
+
+\begin{example} Find the distance between the two points $P_1(2,-1,7)$ and
+$P_2(1,-3,5)$.
+\end{example}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{definition} (Equation of a Sphere) An equation of the sphere with center
+$P(a,b,c)$ and radius $r\geq 0$ is given by 
+$$ (x-a)^2 + (y-b)^2 + (z-c)^2  = r^2 . $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the equation of a sphere with center $(1,1,1)$ and passes
+through $(2,-1,2)$.
+\end{example}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Show that the equation 
+$$ x^2+y^2+z^2 + 4x-6y = 0 $$
+is the equation of a sphere, and find it's center and radius. 
+\end{example}
+}{% presentation
+\vspace{2in}
+\newpage % end the page here, possibly for a video split. 
+}{% nopresentation
+}{% comments
+}

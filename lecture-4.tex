@@ -1,0 +1,120 @@
+\subsection{The Cross Product}
+
+\content{
+\begin{definition} (The Cross Product) If $\vec{a}=\la a_1,a_2,a_3\ra$ and 
+$\vec{b} = \la b_1,b_2,b_3\ra$, then the cross product, denoted $\vec{a}\times
+\vec{b}$ is given by 
+$$ \vec{a}\times \vec{b} = \la a_2b_3-a_3b_2,a_3b_1 - a_1b_3,a_1b_2-a_2b_1\ra.$$
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Show how this can be remembered by taking the determinant of a 3x3 matrix. 
+}
+
+\content{
+\begin{example} Find the cross product between the vectors 
+$\vec{a}=\la 1,3,4\ra$ and $\vec{b}=\la 2,7,-5\ra$.
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+$\vec{a}\times\vec{b}=\la -43, 13, 1\ra$.
+}
+
+\content{
+\begin{theorem} The vector $\vec{a}\times\vec{b}$ is orthogonal to both
+$\vec{a}$ and $\vec{b}$.
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{theorem} If $\theta$ is the angle between vectors $\vec{a}$ and
+$\vec{b}$, then 
+$$ |\vec{a}\times\vec{b}| = |\vec{a}||\vec{b}|\sin\theta. $$
+\end{theorem}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Use the space below to show that this is precesily the area of the parallelogram
+spanned by $\vec{a}$ and $\vec{b}$, so that the magnitude of the cross product
+gives us the area of that parallelogram. 
+}
+
+\content{
+\begin{theorem} Two vectors $\vec{a}$ and $\vec{b}$ are parallel if and only if 
+$\vec{a}\times\vec{b}=0$. 
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find a vector which is perpendicular to the plane passing
+through the points $P(1,4,6)$, $Q(-2,5,-1)$, and $R(1,-1,1)$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+One answer is $\la -40, -15, 15\ra$.
+}
+
+\content{
+\begin{theorem} (Properties of the Cross Product) If $\vec{a}$, $\vec{b}$, and 
+$\vec{c}$ are vectors and $c$ is a scalar, then 
+\begin{enumerate}
+\item $\vec{a}\times\vec{b} = -\vec{b}\times\vec{a}$
+\item $\vec{a}\times (\vec{b}+\vec{c}) =
+\vec{a}\times\vec{b}+\vec{a}\times\vec{c}$
+\item $(c\vec{a})\times\vec{b}=c(\vec{a}\times\vec{b}) = 
+\vec{a}\times(c\vec{b})$
+\item $(\vec{a}+\vec{b})\times \vec{c} = \vec{a}\times \vec{c} +
+\vec{b}\times\vec{c}$
+\item $\vec{a}\cdot (\vec{b}\times\vec{c}) = 
+(\vec{a}\times\vec{b})\cdot\vec{c}$
+\item $\vec{a}\times(\vec{b}\times\vec{c})=
+(\vec{a}\cdot\vec{c})\vec{b}-(\vec{a}\cdot \vec{b})\vec{c}$
+\end{enumerate}
+\end{theorem}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Maybe give a proof of one of these. 
+}
+
+\content{
+The product $\vec{a}\cdot (\vec{b}\times\vec{c})$ that occurs in the above
+theorem is known as the scalar triple product. And it's value is the volume of
+the parallelpiped determined by the vectors $\vec{a}$, $\vec{b}$, and $\vec{c}$. 
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Don't give a proof, just draw out a parallelpiped, and move onto the next
+example. 
+}
+
+\content{
+\begin{example} Find the volue of the parallelpiped determined by the three
+vectors $\vec{a}=\la 1,4,-7\ra$, $\vec{b}=\la 2,-1,4\ra$, and 
+$\vec{c} =\la 0,-9,18\ra$. 
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+The volume is 0, which means that these vectors actually lie in the same plane,
+that is, they are coplanar. 
+
+An Application to computing torque is outlined in the textbook for those who are
+interested in reading that. 
+}

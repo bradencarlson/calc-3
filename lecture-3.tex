@@ -1,0 +1,116 @@
+\subsection{The Dot Product}
+
+
+\content{
+\begin{definition} (The Dot Product) If $\vec{a}=\langle a_1,a_2,a_3\rangle$
+and $\vec{b}=\langle b_1,b_2,b_3\rangle$, then the dot product
+$\vec{a}\cdot\vec{b}$ is given by 
+$$ \vec{a}\cdot \vec{b} = a_1b_1+a_2b_2+a_3b_3. $$
+\end{definition}
+\begin{example} if $\vec{a} =\langle 1, 0, 3\rangle$ and 
+$\vec{b} =\langle 2,-1,1\rangle$, compute $\vec{a}\cdot \vec{b}$.
+\end{example}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+}{% comments
+}
+
+
+\content{
+\begin{theorem} (Properties of the Dot Product) if $\vec{a}$, $\vec{b}$, and 
+$\vec{c}$ are vectors in $\R^3$ and $c$ is a scalar, then 
+\begin{enumerate}
+\item $\vec{a}\cdot \vec{a} = |\vec{a}|^2$
+\item $\vec{a}\cdot\vec{b} = \vec{b}\cdot \vec{a}$
+\item $\vec{a}\cdot(\vec{b}+\vec{c}) = \vec{a}\cdot \vec{b} +
+\vec{a}\cdot\vec{c}$
+\item $(c\vec{a})\cdot \vec{b} =c(\vec{a}\cdot \vec{b})=\vec{a}\cdot
+(c\vec{b})$
+\item $\vec{0}\cdot \vec{a} = 0$
+\end{enumerate}
+\end{theorem}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Maybe provide a proof of 1 and 3.
+}
+
+\content{
+\begin{theorem} If $\theta$ is the angle between vectors $\vec{a}$ and
+$\vec{b}$, then 
+$$ \vec{a}\cdot \vec{b} = |\vec{a}||\vec{b}|\cos\theta. $$
+\end{theorem}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+}{% comments
+In the space below, solve this equation for $\cos\theta$, since this is the
+primary way that we will compute the angle between vectors. 
+}
+
+\content{
+\begin{example} Find the angle between the vectors $\vec{a} = \la 2,2,-1 \ra$
+and $\vec{b} = \la 5,-3,2\ra $.
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{theorem} Two vectors are orthogonal (perpendicular) if their dot product
+is zero. 
+\end{theorem}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Either prove this using the formula above, or use the Pythagorean Theorem. 
+}
+
+\subsubsection{Projections}
+
+\content{
+We will often need to break vectors up into components to determine how much
+force or work is being done in a certain direction.  More specifically, if we
+are given two vectors $\vec{a}$ and $\vec{b}$, we wish to determine the
+projection of $\vec{a}$ onto $\vec{b}$. 
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Draw both vectors $\vec{a}$ and $\vec{b}$ from the same starting point, then
+drop the perpendicular from $\vec{a}$ onto $\vec{b}$ and derive the projection
+formula from there. 
+
+\textbf{Derive both the component formula and the projection formula. }
+}
+
+\content{
+\begin{example} Find the projection of the vector $\vec{a}=\la 1,1,2\ra $ onto
+the vector $\vec{b}=\la -2,3,1\ra$.
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} One use of projections is to find the amount of work done by a
+constant force. A wagon is being pulled a distance of 100 m along by a constant
+force of 70 N. The handle of the wagon is held at an angle of $35^\circ$ above
+the horizontal. Find the work done by the force. 
+\end{example}
+}{% presentation
+}{% nopresentation
+}{% comments
+Set up a diagram, then when the triangle is drawn, use the fact that work is
+force times distance to derive the formula 
+$$ W = \vec{F}\cdot \vec{D}$$ 
+where $\vec{F}$ is the force vector being applied and $\vec{D}$ is the direction
+with magnitude 100. 
+}
