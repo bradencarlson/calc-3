@@ -1,0 +1,74 @@
+\subsection{Tangent Planes and Linear Approximations}
+\content{
+
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Derive the equation of the tangent plane. This ends up being 
+$$ z-z_0 = f_x(a,b)(x-a)+f_y(a,b)(y-b). $$
+}
+
+\content{
+\begin{example} Find the tangent plane to the elliptic paraloloid 
+$$ z = 2x^2+y^2. $$
+\end{example} 
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+The tangent plane can be used to approximate values of a function near a point
+whose value is known:
+\begin{example} Use the tangent plane to approximate $f(1.1,-0.1)$ where 
+$$ f(x,y) = xe^{xy}. $$
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+approx. $1.1e^{-0.11} \approx 0.98542$.
+}
+
+\subsubsection{Differentials}
+
+\content{
+Recall that for functions of a single variable, we have that the differential
+$dy$ is given by 
+$$ dy = f'(x)dx. $$
+We have a similar definition for functions of two variables: 
+\begin{definition} We define the differential $dz$, also called the total
+differential, to be the value 
+$$ dz = f_x(x,y)dx + f_y(x,y)dy=\frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy. $$
+\end{definition}
+The Linearization of $f$ at $(a,b)$ can then be written 
+$$ f(x,y) \approx f(a,b) + dz. $$
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} If 
+$$ z = f(x,y) = x^2+3xy - y^2, $$
+find the differential $dz$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} The baes radius and height of a right circular cone are measured
+as 10 cm and 25 cm, respectively, with a possible error in measurement of as
+much as 0.01 cm in each. Use differentials to estimate the maximum error in the
+calculated volume of the cone. 
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}

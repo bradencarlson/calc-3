@@ -1,0 +1,102 @@
+\subsection{Arc Length}
+
+
+\content{
+\begin{definition} Given a vector valued fuction $\vec{r}(t)$, defined on an
+interval $[a,b]$, the length of the curve $\vec{r}(t)$ from $a$ to $b$ is given
+by 
+$$ L = \int_a^b |\vec{r}'(t)|\, dt. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the length of the curve $\vec{r}(t) = \la \cos t, \sin t,
+t\ra$ from $a=0$ to $b=2\pi$.
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+}
+
+\subsubsection{The Arc Length Function}
+
+\content{
+\begin{definition}
+Let $\vec{r}(t)$ be a vector valued function, defined on $[a,b]$, we can define
+it's arc length function as 
+$$ s(t) = \int_a^t |\vec{r}(u)|\, du. $$
+\end{definition}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Note that by the fundamental Theorem of Calculus, we have that 
+$\frac{ds}{dt} = |\vec{r}(t)|$. 
+
+It will sometimes be usefull to reparametrize the function $\vec{r}(t)$ in terms
+of it's arc length: if $s(t)$ is the arc length function, we might be able to
+solve for $t$, that is find a function $t=t(s)$, then the point $\vec{r}(t(3))$
+is the point where the particle has traveled 3 units of length from it's
+starting point. 
+}
+
+\subsubsection{The Tangent, Normal, and Binormal Vectors}
+
+\content{
+\begin{definition} Given a vector valued function $\vec{r}(t)$ the unit tangent
+vector is given by 
+$$ \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}. $$
+\end{definition}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+}{% comments
+This is simply a unit vector in the same direction as the tangent vector to
+$\vec{r}(t)$.
+}
+
+\content{
+\begin{definition}
+Given a vector valued function $\vec{r}(t)$, the unit normal vector is given by 
+$$ \vec{N}(t) = \frac{\vec{T}'(t)}{|\vec{T}'(t)|}. $$
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Since $|\vec{T}(t)|=1$ for all $t$, $\vec{T}'(t)$ is orthogonal to $\vec{T}(t)$.
+Thus this vector can be thought of as the direction that the particle is turning
+at time $t$.
+}
+
+\content{
+\begin{definition}
+Given a vector valued function $\vec{r}(t)$, the binormal vector $\vec{B}(t)$ is
+given by 
+$$ \vec{B}(t) = \vec{T}(t)\times \vec{N}(t). $$
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+This vector is orthogonal to both $\vec{T}(t)$ and $\vec{N}(t)$, and is also a
+unit vector. 
+
+Draw a picture of how this gives a basis (called the TNB basis), which is
+important to differential geometry and applications to the motion of spacecraft. 
+}
+
+\content{
+\begin{example} Find the unit normal vector and binormal vectors for the
+function 
+$$ \vec{r}(t) = \la \cos t, \sin t, t\ra. $$
+\end{example}
+}{% presentation
+\vspace{5in}
+}{% nopresentation
+}{% comments
+}
