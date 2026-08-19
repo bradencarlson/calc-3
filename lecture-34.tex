@@ -1,65 +1,4 @@
-\subsection{Paramtric Surfaces and their Area}
-
-\content{
-}{% presentation
-\vspace{4in}
-}{% nopresentation
-}{% comments
-Define a parametric surface: 
-$$ \vec{r}(u,v) = x(u,v)\vec{i}+y(u,v)\vec{j}+z(u,v)\vec{k}, $$
-defined on a region in the $uv$-plane. 
-}
-
-
-\content{
-\begin{example} Identify and sketch the surface whose vector equation is given
-by 
-$$ \vec{r}(u,v) = 2\cos u \vec{i} + v\vec{j} + 2\sin u\vec{k}. $$
-\end{example}
-}{% presentation
-\vspace{3in}
-}{% nopresentation
-}{% comments
-From here we will jump to the computer to see an example. 
-}
-
-\content{
-\begin{example}
-Find a vector function that represents the plane that passes through the point
-$P_0$ with position vector $\vec{r}_0$ and that contains two nonparallel vectors
-$\vec{a}$ and $\vec{b}$. 
-\end{example}
-}{% presentation
-\vspace{3in}
-}{% nopresentation
-}{% comments
-We will frequently need to take a given surface and find a parametrization for
-it, rather than being given the parametrization. 
-}
-
-\content{
-\begin{example} Find a prametric representation of the sphere 
-$$ x^2+y^2+z^2 = a^2. $$
-\end{example}
-}{% presentation
-\vspace{3in}
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{example} Find a parametric representation of the cylinder 
-$$ x^2+y^2 = 4,\quad 0\leq z\leq 1. $$
-\end{example}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-Since this has a simple representation in cylindrical coordinates, we shall use
-those. 
-}
-
-\subsubsection{Tangent Planes}
+\subsection{Surface Integrals}
 
 \content{
 
@@ -67,39 +6,16 @@ those.
 \vspace{4in}
 }{% nopresentation
 }{% comments
-Go over how the normal vector of the tagent plane is derived.  the normal vector
-is given by 
-$$ \vec{r}_u \times \vec{r}_v. $$
-Mention that a surface is called smooth if this vector is never the zero vector. 
+Go over the setup for the surface integral of a scalar valued function formula
+ends up being 
+$$ \sum\sum f(P_{ij}^*)\Delta S_{ij}. $$
+so the integral is 
+$$ \iint_S f(x,y,z) \, dS . $$
 }
 
 \content{
-\begin{example} Find the tangent plane to the surface with parametric equations
-$x=u^2$, $y=v^2$, and $z=u+2v$ at the point $(1,1,3)$.
-\end{example}
-}{% presentation
-\vspace{3in}
-}{% nopresentation
-}{% comments
-Normal vector is $\la -2u, -4u, 4uv\ra. $
-}
-
-\subsubsection{Surface Area}
-\content{
-
-}{% presentation
-\vspace{4in}
-}{% nopresentation
-}{% comments
-Go over the derivation of the Riemann Summ for the surface area
-}
-
-\content{
-\begin{definition} If a smooth parametric surface $S$ is given by the equation 
-$$ \vec{r}(u,v) = \la x(u,v) , y(u,v), z(u,v) \ra, $$
-and $S$ is covered just once as $(u,v)$ ranges throughout a region $D$, then the
-surface area of $S$ is
-$$ A(S) =\iint_D |\vec{r}_u\times \vec{r}_v|\,dA. $$
+\begin{definition} The surface integral of $f(x,y,z)$ over $S$ is given by 
+$$ \iint_S f(x,y,z)\, dS = \iint_D f(x,y,z)|\vec{r}_u\times \vec{r}_v|\,dA. $$
 \end{definition}
 }{% presentation
 }{% nopresentation
@@ -107,23 +23,89 @@ $$ A(S) =\iint_D |\vec{r}_u\times \vec{r}_v|\,dA. $$
 }
 
 \content{
-\begin{example} Find the surface area of a sphere of radius $a$.
-\end{example}
-}{% presentation
-\vspace{4in}
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{example} Find the surface area of the part of the paraboloid $z=x^2+y^2$
-which lies under the plane $z=9$.
+\begin{example} Evaluate $\iint_S x^2\,dS$, where $S$ is the unit sphere. 
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
 }{% comments
-Go over how for a regular surface parametrized by $x$ and $y$, we still use the
-above fomula. (this is derived in the textbook as a separate formula to
-remember)
+As previously computed
+$\vec{r}_\theta\times\vec{r}_\phi =\la \sin^2\phi\cos\theta,
+\sin^2\phi\sin\theta, \sin\phi\cos\phi\ra. $
+}
+
+
+\content{
+\begin{example} Evaluate $\iint_S z\,dS$, where $S$ is the surface whose sides
+$S_1$ are given by the cylinder $x^2+y^2=1$, whose bottom $S_2$ is the disk
+$x^2+y^2\leq 1$ in the plane $z=0$, and whose top $S_3$ is the part of the plane
+$z=1+x$ that lies above $S_2$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+$\iint_{S_1} z = 3\pi/2$, $\iint_{S_2}z = 0$, and $\iint_{S_3} z =
+(3/2+\sqrt{2})\pi$.
+}
+
+\subsubsection{Oriented Surfaces}
+
+\content{
+\begin{definition} An oriented surface is a surface on which it is possible to
+choose a unit normal vector $\vec{n}$ at every point so that $\vec{n}$ varies
+continuously over $S$. 
+\end{definition}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Mention that all of the surfaces we look at in this course will be orientable,
+but nonorientable surfaces do exist (Mobius strip)
+}
+
+\subsubsection{Surface Integrals of Vector Fields and Flux}
+
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Go over how the flux integral is derived the amount of flow through the surface
+$S$ in the direction of $\vec{n}$ (normal vector) in a small $(u,v)$ rectangle
+on the surface is approximately equal to 
+$$ \vec{F}\cdot \vec{n} A(S_{ij}) $$
+Leading us to 
+$$ \iint_S \vec{F}\cdot \vec{n}\, dS$$
+}
+
+\content{
+\begin{definition} If $\vec{F}$ is a continuous vector field defined on an
+oriented surface $S$ with unit normal vector $\vec{n}$, then the usrface
+integral of $\vec{F}$ over $S$ is 
+$$ \iint_S \vec{F}\cdot d\vec{S} = \iint_S \vec{F}\cdot \vec{n}\,dS. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+Go over how this simplifies to 
+$$ \iint_D \vec{F}\cdot (\vec{r}_u\times \vec{r}_v)\,dA $$ 
+if the surface is parametrized by $\vec{r}(u,v)$.
+}
+
+\content{
+\begin{example} Find the flux of the vector field $\vec{F}(x,y,z) = \la z, y,
+x\ra$ across the unit sphere $x^2+y^2+z^2=1$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+As previously computed, for this example 
+$\vec{r}_\theta\times\vec{r}_\phi =\la \sin^2\phi\cos\theta,
+\sin^2\phi\sin\theta, \sin\phi\cos\phi\ra. $
+
+Mention that in some cases, the surface may have to be treated in parts, just as
+a previous example of a scalar surface integral. 
 }

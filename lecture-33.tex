@@ -1,30 +1,45 @@
-\subsection{Curl and Divergence}
-
+\subsection{Paramtric Surfaces and their Area}
 
 \content{
-\begin{definition} Let $\myvec{F} = P\myvec{i} + Q\myvec{j} +
-R\myvec{k}$ be a vector field on $\R^3$ and suppose that the partial
-derivatives of $P$, $Q$, and $R$ all exist, then the curl of $\myvec{F}$ is
-another vector field on $\R^3$ defined by 
-$$ \text{curl}\,\myvec{F} = \left(\pd{P}{y}-\pd{Q}{z}\right)\myvec{i} + 
-\left(\pd{P}{z}-\pd{R}{x}\right)\myvec{j} + 
-\left(\pd{Q}{x}-\pd{P}{y}\right)\myvec{k}. $$
-\end{definition}
 }{% presentation
-\vspace{3in}
+\vspace{4in}
 }{% nopresentation
 }{% comments
-To aid our memory, introduce the vector differential operator ``del'' 
-$$ \nabla = \pd{}{x}\myvec{i} + \pd{}{y}\myvec{j} + \pd{}{z}\myvec{k}. $$
-This acts on a scalar function to produce the gradient of $f$. Then we can think
-of 
-$$ \text{curl}\,\myvec{F} = \nabla\times \myvec{F}. $$
+Define a parametric surface: 
+$$ \vec{r}(u,v) = x(u,v)\vec{i}+y(u,v)\vec{j}+z(u,v)\vec{k}, $$
+defined on a region in the $uv$-plane. 
 }
 
 
 \content{
-\begin{example} If $\myvec{F}(x,y,z) = xy\myvec{i} + xyz\myvec{j} -y^2\myvec{k}$, find 
-$\text{curl}\,\myvec{F}$. 
+\begin{example} Identify and sketch the surface whose vector equation is given
+by 
+$$ \vec{r}(u,v) = 2\cos u \vec{i} + v\vec{j} + 2\sin u\vec{k}. $$
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+From here we will jump to the computer to see an example. 
+}
+
+\content{
+\begin{example}
+Find a vector function that represents the plane that passes through the point
+$P_0$ with position vector $\vec{r}_0$ and that contains two nonparallel vectors
+$\vec{a}$ and $\vec{b}$. 
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+We will frequently need to take a given surface and find a parametrization for
+it, rather than being given the parametrization. 
+}
+
+\content{
+\begin{example} Find a prametric representation of the sphere 
+$$ x^2+y^2+z^2 = a^2. $$
 \end{example}
 }{% presentation
 \vspace{3in}
@@ -33,92 +48,82 @@ $\text{curl}\,\myvec{F}$.
 }
 
 \content{
-\begin{theorem} If $f$ is a function of three variables that has continuous
-second-order derivatives, then $\text{curl}(\nabla f)=\myvec{0}$.
-\end{theorem}
-}{% presentation
-\vspace{3in}
-}{% nopresentation
-}{% comments
-prove this quickly. Use this to show that if a vector field is conservative,
-then it's curl is zero. 
-}
-
-\content{
-\begin{example} Show that the vector field $\myvec{F}(x,y,z) = xz\myvec{i} +
-xyz\myvec{j} -y^2\myvec{k}$ is not conservative. 
-\end{example}
-}{% presentation
-}{% nopresentation
-}{% comments
-By previous comments, this is trivial, since the curl of this vector field was
-computed above and is not zero. 
-}
-
-\content{
-\begin{theorem} If $\myvec{F}$ is a vector field defined on all of $\R^3$ whose
-component functions have continous partial derivatives and
-$\text{curl}\,\myvec{F}=\myvec{0}$, then $\myvec{F}$ is a conservative vector field. 
-\end{theorem}
-}{% presentation
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{example} Show that $\myvec{F}(x,y,z) = y^2z^3\myvec{i} +2xyz^3\myvec{j}
-+3xy^2z^2\myvec{k}$ is conservative, and find a function $f$ such that $\nabla f =
-\myvec{F}$. 
-\end{example}
-}{% presentation
-\vspace{3in}
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{definition} If $\myvec{F}=P\myvec{i} + Q\myvec{j} + R\myvec{k}$ is a vector field
-on $\R^3$, we define the divergence of $\myvec{F}$ to be 
-$$ \text{div}\,\myvec{F} = \pd{P}{x} + \pd{Q}{y} + \pd{R}{z}, $$
-provided the above partial derivatives exist.
-\end{definition}
-}{% presentation
-\vspace{0.5in}
-}{% nopresentation
-}{% comments
-Mention that this can be remembered by writing
-$$ \nabla \cdot \myvec{F}$$. 
-}
-
-\content{
-\begin{example} Find the divergence of $\myvec{F}$ if 
-$$ \myvec{F}(x,y,z) = xz\myvec{i} + xyz\myvec{j} -y^2\myvec{k}. $$
+\begin{example} Find a parametric representation of the cylinder 
+$$ x^2+y^2 = 4,\quad 0\leq z\leq 1. $$
 \end{example}
 }{% presentation
 \vspace{2in}
 }{% nopresentation
 }{% comments
+Since this has a simple representation in cylindrical coordinates, we shall use
+those. 
 }
 
+\subsubsection{Tangent Planes}
+
 \content{
-\begin{theorem} If $\myvec{F} = P\myvec{i} + Q\myvec{j} + R\myvec{k}$ is a vector field
-on $\R^3$ and $P$, $Q$, and $R$ have continuous second order partial
-derivatives, then 
-$$ \normalfont\text{div}\,\text{curl}\,\myvec{F} = 0. $$
-\end{theorem}
+
 }{% presentation
+\vspace{4in}
 }{% nopresentation
 }{% comments
+Go over how the normal vector of the tagent plane is derived.  the normal vector
+is given by 
+$$ \vec{r}_u \times \vec{r}_v. $$
+Mention that a surface is called smooth if this vector is never the zero vector. 
 }
 
 \content{
-\begin{example} Show that the vector field $\myvec{F} = xz\myvec{i} +xyz\myvec{j}
--y^2\myvec{k}$ can't be written as the curl of another vector field, that is,
-$\myvec{F}\neq \text{curl}\,\myvec{G}$ for any vector field $\myvec{G}$.  
+\begin{example} Find the tangent plane to the surface with parametric equations
+$x=u^2$, $y=v^2$, and $z=u+2v$ at the point $(1,1,3)$.
 \end{example}
 }{% presentation
-\vspace{2in}
+\vspace{3in}
 }{% nopresentation
 }{% comments
-If this were so, the the above theorem tells us that $\text{div}\,\myvec{F}=0$.
+Normal vector is $\la -2u, -4u, 4uv\ra. $
+}
+
+\subsubsection{Surface Area}
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Go over the derivation of the Riemann Summ for the surface area
+}
+
+\content{
+\begin{definition} If a smooth parametric surface $S$ is given by the equation 
+$$ \vec{r}(u,v) = \la x(u,v) , y(u,v), z(u,v) \ra, $$
+and $S$ is covered just once as $(u,v)$ ranges throughout a region $D$, then the
+surface area of $S$ is
+$$ A(S) =\iint_D |\vec{r}_u\times \vec{r}_v|\,dA. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the surface area of a sphere of radius $a$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the surface area of the part of the paraboloid $z=x^2+y^2$
+which lies under the plane $z=9$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Go over how for a regular surface parametrized by $x$ and $y$, we still use the
+above fomula. (this is derived in the textbook as a separate formula to
+remember)
 }

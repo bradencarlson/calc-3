@@ -1,81 +1,53 @@
-\subsection{Triple Integrals}
+\subsection{Triple Integrals in Cylindrical Coordinates}
 
 \content{
-
-}{% presentation
-\vspace{4in}
-}{% nopresentation
-}{% comments
-go over the set up for the triple integral of $f(x,y,z)$ over a box.
-}
-
-\content{
-\begin{definition} The triple integral of $f$ over the box 
-$B = [a,b]\times [c,d]\times[e,f]$ is given by 
-$$\iiint_B f(x,y,z)\,dV =\lim_{i,j,k\rightarrow}\sum_{i=1}^\ell\sum_{j=1}^m
-\sum_{k=1}^n f(x_{ijk}^*,y_{ijk}^*,z_{ijk}^*)\Delta V$$
-\end{definition}
-}{% presentation
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{theorem} If $f$ is continuous on the box $B$, then 
-$$ \iiint_B f(x,y,z)\, dV = \int_a^b\int_c^d\int_e^f 
-f(x,y,z) \,dz dy dx. $$
-\end{theorem}
-}{% presentation
-}{% nopresentation
-}{% comments
-Mention that there are five other orders which we can choose here, all of which
-are the same. 
-}
-
-\content{
-\begin{example} Evaluate the integral $\iiint_B xyz^2\,dV$ where 
-$B = [0,1]\times[-1,2]\times[0,3]. $
+\begin{example} Identify the surface whose equation is 
+$$ r=2\sin\theta. $$
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
 }{% comments
-Answer is $\frac{27}{4}$.
 }
 
 \content{
-\begin{example} Evaluate the integral $\iiint_E z\, dV$, where $E$ is the solid
-in the first octant bounded by the surface $z=12xy$ and the planes $y=x$, and
-$x=1$.
+\begin{example} Evaluate the integral $\iiint_E x^2+y^2\, dV$ where 
+$E = \{(x,y,z) : -2\leq x\leq 2, -\sqrt{4-x^2}\leq y\leq \sqrt{4-x^2}, 
+\sqrt{x^2+y^2}\leq z\leq 2\}$.
 \end{example}
 }{% presentation
 \vspace{4in}
 }{% nopresentation
 }{% comments
-mention that just as in the case of double integrals, we can define the integral
-of more complicated regions like the one in this example. 
 }
 
 \content{
-\begin{example} Evaluate the integral $\iiint_E \sqrt{x^2+y^2}\,dV$ where 
-$E$ is the region bounded by the paraboloid $y=x^2+z^2$ and the plane $y=4$.
+\begin{example} Find the volume of the solid which lies above the $xy$-plane and
+below the surface $z=4-x^2-y^2$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Evaluate the integral $\iiint_E x\,dV$ where 
+$E$ is enclosed by by the paraboloid $x=y^2+z^2$ and the plane $x=4$.
 \end{example}
 }{% presentation
 \vspace{4in}
 }{% nopresentation
 }{% comments
-Make sure to work this one out beforehand. 
 }
 
+
 \content{
-\begin{example} Use a triple integral to find the volume of the tetrahedron $T$
-bounded by the planes $x+2y+z=2$, $x=2y$, $x=0$ and $z=0$.
+\begin{example} Find the volume of the region bounded between the surfaces 
+$z=\sqrt{x^2+y^2}$ and $z=6-x^2-y^2$.
 \end{example}
 }{% presentation
 \vspace{4in}
 }{% nopresentation
 }{% comments
-Mention that there are several applications covered in Section 15.6 of the book,
-which will not be covered here. 
 }
-

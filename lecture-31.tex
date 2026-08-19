@@ -1,90 +1,53 @@
-\subsection{The Fundamental Theorem for Line Integrals}
+\subsection{Green's Theorem}
 
 \content{
-
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-Recall the fundamental Theorem of Calculus
-}
-
-\content{
-\begin{theorem} Let $C$ be a smooth curve given by the vector function
-$\myvec{r}(t)$ on $a\leq t\leq b$. Let $f$ be a differentiable function of two
-or three variables whose gradient vector $\nabla f$ is continuous on $C$. Then 
-$$ \int_C \nabla f\cdot d\myvec{r}  = f(\myvec{r}(b)) - f(\myvec{r}(a)). $$
+\begin{theorem} (Green's Theorem) Let $C$ be a positively oriented,
+piecewise-smooth, simple closed curve in the plane and let $D$ be the region
+bounded by $C$. If $P$ and $Q$ have continuous partial derivatives on an open
+region that contains $D$, then 
+$$\int_C P\,dx+Q\,dy = \iint_D \left(\pd{Q}{x}-\pd{P}{y}\right)\,dA. $$
 \end{theorem}
 }{% presentation
 }{% nopresentation
 }{% comments
-Mention that this indicates that the line integral in this case is
-path-independent. 
 }
 
 \content{
-\begin{definition} Let $\myvec{F}$ be a vector field. If there exists a function
-$f$ such that $\nabla f=\myvec{F}$, we call $\myvec{F}$ a conservative vector
-field. 
-\end{definition}
-}{% presentation
-}{% nopresentation
-}{% comments
-This, along with the previous theorem, means that line integrals of conservative
-vector fields are path-independent. 
-}
-
-\content{
-So, we wish to be able to determine if a vector field is conservative, since
-this allows us to easily evaluate line integrals. The following theorem allows
-us to do just that. 
-
-\begin{theorem} Let $\myvec{F} = P\myvec{i} + Q\myvec{j}$ be a vector field on
-an open simply-connected region $D$. Suppose that $P$ and $Q$ have continuous
-first-order partial derivatives and that 
-$$ \pd{P}{y} = \pd{Q}{x} $$
-on all of $D$. Then $\myvec{F}$ is conservative. 
-\end{theorem}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-Briefly go over what it means to be simply connected. 
-}
-
-\content{
-\begin{example} Determine whether of not the given vector fields are
-conservative. 
-\begin{enumerate}
-\item $\myvec{F}(x,y) = \la x-y, x-2\ra. $
-\item $\myvec{F}(x,y) = (3+2xy)\myvec{i}+(x^2-3y^2)\myvec{j}. $
-\end{enumerate}
-\end{example}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-}
-
-
-\content{
-\begin{example} If $\myvec{F}(x,y) = (3+2xy)\myvec{i}+(x^2-3y^2)\myvec{j}$, find
-a function $f$ such that $\nabla f=\myvec{F}$. 
+\begin{example} Evaluate $\int_C x^4dx+xydy$ where $C$ is the triangular curve
+consisting of the line segments from $(0,0)$ to $(1,0)$, from $(1,0)$ to
+$(0,1)$, and from $(0,1)$ back to $(0,0)$.
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
 }{% comments
+Answer: $\frac{1}{6}$.
 }
 
 \content{
-\begin{example} Evaluate the integral $\int_C \myvec{F}\cdot d\myvec{r}$, where 
-$$\myvec{F}(x,y) = (3+2xy)\myvec{i}+(x^2-3y^2)\myvec{j}, $$
-and $C$ is the curve given by 
-$$\myvec{r}(t) = e^t\sin t\myvec{i} + e^t\cos t\myvec{j}. $$
+\begin{example} Evaluate $\oint_C (3y-e^{\sin x})dx+(7x+\sqrt{y^4+1})dy$, where
+$C$ is the circle $x^2+y^2=9$.
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
 }{% comments
+Mention that the notation $\oint$ is used to denote that the integral is being
+taken around a closed, positively oriented curve. 
+
+Also mention that in the book, there is an interesting section on finding areas
+with green's theorem, which is the basis of how a planimeter works. 
 }
+
+\content{
+\begin{example} Evaluate $\int_C y^2\,dx + 3xy\,dy$ where $C$ is the boundary of
+the semiannular region $D$ in the upper half plane between the circles
+$x^2+y^2=1$ and $x^2+y^2=4$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Answer: 14/3
+}
+

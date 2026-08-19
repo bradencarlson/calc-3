@@ -1,11 +1,64 @@
-\subsection{Green's Theorem}
+\subsection{Curl and Divergence}
+
 
 \content{
-\begin{theorem} (Green's Theorem) Let $C$ be a positively oriented,
-piecewise-smooth, simple closed curve in the plane and let $D$ be the region
-bounded by $C$. If $P$ and $Q$ have continuous partial derivatives on an open
-region that contains $D$, then 
-$$\int_C P\,dx+Q\,dy = \iint_D \left(\pd{Q}{x}-\pd{P}{y}\right)\,dA. $$
+\begin{definition} Let $\myvec{F} = P\myvec{i} + Q\myvec{j} +
+R\myvec{k}$ be a vector field on $\R^3$ and suppose that the partial
+derivatives of $P$, $Q$, and $R$ all exist, then the curl of $\myvec{F}$ is
+another vector field on $\R^3$ defined by 
+$$ \text{curl}\,\myvec{F} = \left(\pd{P}{y}-\pd{Q}{z}\right)\myvec{i} + 
+\left(\pd{P}{z}-\pd{R}{x}\right)\myvec{j} + 
+\left(\pd{Q}{x}-\pd{P}{y}\right)\myvec{k}. $$
+\end{definition}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+To aid our memory, introduce the vector differential operator ``del'' 
+$$ \nabla = \pd{}{x}\myvec{i} + \pd{}{y}\myvec{j} + \pd{}{z}\myvec{k}. $$
+This acts on a scalar function to produce the gradient of $f$. Then we can think
+of 
+$$ \text{curl}\,\myvec{F} = \nabla\times \myvec{F}. $$
+}
+
+
+\content{
+\begin{example} If $\myvec{F}(x,y,z) = xy\myvec{i} + xyz\myvec{j} -y^2\myvec{k}$, find 
+$\text{curl}\,\myvec{F}$. 
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{theorem} If $f$ is a function of three variables that has continuous
+second-order derivatives, then $\text{curl}(\nabla f)=\myvec{0}$.
+\end{theorem}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+prove this quickly. Use this to show that if a vector field is conservative,
+then it's curl is zero. 
+}
+
+\content{
+\begin{example} Show that the vector field $\myvec{F}(x,y,z) = xz\myvec{i} +
+xyz\myvec{j} -y^2\myvec{k}$ is not conservative. 
+\end{example}
+}{% presentation
+}{% nopresentation
+}{% comments
+By previous comments, this is trivial, since the curl of this vector field was
+computed above and is not zero. 
+}
+
+\content{
+\begin{theorem} If $\myvec{F}$ is a vector field defined on all of $\R^3$ whose
+component functions have continous partial derivatives and
+$\text{curl}\,\myvec{F}=\myvec{0}$, then $\myvec{F}$ is a conservative vector field. 
 \end{theorem}
 }{% presentation
 }{% nopresentation
@@ -13,41 +66,59 @@ $$\int_C P\,dx+Q\,dy = \iint_D \left(\pd{Q}{x}-\pd{P}{y}\right)\,dA. $$
 }
 
 \content{
-\begin{example} Evaluate $\int_C x^4dx+xydy$ where $C$ is the triangular curve
-consisting of the line segments from $(0,0)$ to $(1,0)$, from $(1,0)$ to
-$(0,1)$, and from $(0,1)$ back to $(0,0)$.
+\begin{example} Show that $\myvec{F}(x,y,z) = y^2z^3\myvec{i} +2xyz^3\myvec{j}
++3xy^2z^2\myvec{k}$ is conservative, and find a function $f$ such that $\nabla f =
+\myvec{F}$. 
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
 }{% comments
-Answer: $\frac{1}{6}$.
 }
 
 \content{
-\begin{example} Evaluate $\oint_C (3y-e^{\sin x})dx+(7x+\sqrt{y^4+1})dy$, where
-$C$ is the circle $x^2+y^2=9$.
-\end{example}
+\begin{definition} If $\myvec{F}=P\myvec{i} + Q\myvec{j} + R\myvec{k}$ is a vector field
+on $\R^3$, we define the divergence of $\myvec{F}$ to be 
+$$ \text{div}\,\myvec{F} = \pd{P}{x} + \pd{Q}{y} + \pd{R}{z}, $$
+provided the above partial derivatives exist.
+\end{definition}
 }{% presentation
-\vspace{3in}
+\vspace{0.5in}
 }{% nopresentation
 }{% comments
-Mention that the notation $\oint$ is used to denote that the integral is being
-taken around a closed, positively oriented curve. 
-
-Also mention that in the book, there is an interesting section on finding areas
-with green's theorem, which is the basis of how a planimeter works. 
+Mention that this can be remembered by writing
+$$ \nabla \cdot \myvec{F}$$. 
 }
 
 \content{
-\begin{example} Evaluate $\int_C y^2\,dx + 3xy\,dy$ where $C$ is the boundary of
-the semiannular region $D$ in the upper half plane between the circles
-$x^2+y^2=1$ and $x^2+y^2=4$.
+\begin{example} Find the divergence of $\myvec{F}$ if 
+$$ \myvec{F}(x,y,z) = xz\myvec{i} + xyz\myvec{j} -y^2\myvec{k}. $$
 \end{example}
 }{% presentation
-\vspace{3in}
+\vspace{2in}
 }{% nopresentation
 }{% comments
-Answer: 14/3
 }
 
+\content{
+\begin{theorem} If $\myvec{F} = P\myvec{i} + Q\myvec{j} + R\myvec{k}$ is a vector field
+on $\R^3$ and $P$, $Q$, and $R$ have continuous second order partial
+derivatives, then 
+$$ \normalfont\text{div}\,\text{curl}\,\myvec{F} = 0. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Show that the vector field $\myvec{F} = xz\myvec{i} +xyz\myvec{j}
+-y^2\myvec{k}$ can't be written as the curl of another vector field, that is,
+$\myvec{F}\neq \text{curl}\,\myvec{G}$ for any vector field $\myvec{G}$.  
+\end{example}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+If this were so, the the above theorem tells us that $\text{div}\,\myvec{F}=0$.
+}
