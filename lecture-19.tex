@@ -1,0 +1,114 @@
+\subsection{Double Integrals over Rectangles}
+
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Recall definition for single integrals of single variate functions, then draw a
+surface over a rectangle and demonstrate the definition of the double integral
+over a rectangle. 
+}
+
+\content{
+\begin{definition} The double integral of the function $f$ over the rectangle
+$R$ is defined to be
+$$ \iint_R f(x,y)\,dA= \lim_{m,n\rightarrow \infty} \sum_{i=1}^n\sum_{j=1}^m
+f(x_i,y_j)\Delta A, $$
+if this limit exists. 
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+Mention that just like the single variable case gives us the area, the double
+integral gives the volume. 
+}
+
+\content{
+\begin{example} Approximate the volume of the region above the $x,y$-plane and
+below the surface $z=16-x^2-2y^2$ over the region $R=[0,2]\times[0,2]$. 
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Sketch the region and surface
+
+Use $m=n=1$ (so four rectangles) to approximate this. 
+
+\textbf{Mention that the definition is very difficult to work with, but luckily
+we have Fubini's Theorem to help us evaluate double integrals. }
+}
+
+\content{
+\begin{theorem} (Fubini's Theorem) If $f$ is continuous on the rectangle 
+$R=[a,b]\times[c,d]$, then 
+$$ \iint_Rf(x,y)\,dA = \int_a^b\int_c^d f(x,y) dydx = \int_c^d\int_a^b f(x,y)
+dxdy. $$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+Mention that the right two are called iterated integrals. 
+}
+
+\content{
+\begin{example} Evaluate the iterated integral
+$$ \int_0^2\int_1^2 (x-3y^2)dydx. $$
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Answer is -12.
+}
+
+\content{
+\begin{example} Evaluate 
+$$ \iint_R y\sin(xy)\,dA$$
+where $R = [1,2]\times[0,\pi]$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Mention that if we integrate with respect to $y$ first, this is very difficult,
+so there may be one of the integrals in Fubini's Theorem which is easier than
+the other. 
+}
+
+\content{
+\begin{example} Find the exact volume in the first example. That is, find the
+volume beneath the surface $z=16-x^2-2y^2$ over the rectangle
+$R=[0,2]\times[0,2]$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Volume: 48
+}
+
+\subsubsection{Average Value}
+\content{
+\begin{definition} The average value of the function $f(x,y)$ over the rectangle
+$R$ is defined by 
+$$ f_{avg} = \frac{1}{A(R)} \iint_R f(x,y)\, dA, $$
+where $A(R)$ is the area of the rectangle $R$. 
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Find the average value of the function 
+$$ f(x,y) = x^2-2y^2 $$
+over the rectangle $R=[-1,1]\times[-1,1]$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+}

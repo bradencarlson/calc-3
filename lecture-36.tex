@@ -1,0 +1,33 @@
+\subsection{Stokes' Theorem and the Divergence Theorem}
+
+\subsubsection{Stokes' Theorem}
+
+\content{
+\begin{theorem} Let $S$ be an oriented piecewise-smooth surface that is bounded
+by a simple closed piecewise-smooth boundary curve $C$ with positive
+orientation. Let $\myvec{F}$ be a vector field whose components have continuous
+partial derivatives on an open region in $\R^3$ that contains $S$. Then 
+$$ \int_C \myvec{F}\cdot d\myvec{r} = \iint_S \text{curl}\, \myvec{F}\cdot d\myvec{S}.
+$$
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+
+\content{
+\begin{example} Evaluate $\int_C \myvec{F}\cdot d\myvec{r}$ where $\myvec{F} =
+-y^2\myvec{i} +x\myvec{j} +z^2\myvec{k}$ and $C$ is the curve of intersection of the
+plane $y+z=2$ and the cylinder $x^2+y^2=1$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Maybe go over the beginning of the setup of the line integral, then go over the
+surface integral
+$$ \text{curl}\myvec{F} = (1+2y)\myvec{k} $$
+then parametrize the surface and evaluate the integral, final answer is 
+$\pi$.
+}

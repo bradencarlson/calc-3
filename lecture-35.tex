@@ -1,0 +1,111 @@
+\subsection{Surface Integrals}
+
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Go over the setup for the surface integral of a scalar valued function formula
+ends up being 
+$$ \sum\sum f(P_{ij}^*)\Delta S_{ij}. $$
+so the integral is 
+$$ \iint_S f(x,y,z) \, dS . $$
+}
+
+\content{
+\begin{definition} The surface integral of $f(x,y,z)$ over $S$ is given by 
+$$ \iint_S f(x,y,z)\, dS = \iint_D f(x,y,z)|\vec{r}_u\times \vec{r}_v|\,dA. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{example} Evaluate $\iint_S x^2\,dS$, where $S$ is the unit sphere. 
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+As previously computed
+$\vec{r}_\theta\times\vec{r}_\phi =\la \sin^2\phi\cos\theta,
+\sin^2\phi\sin\theta, \sin\phi\cos\phi\ra. $
+}
+
+
+\content{
+\begin{example} Evaluate $\iint_S z\,dS$, where $S$ is the surface whose sides
+$S_1$ are given by the cylinder $x^2+y^2=1$, whose bottom $S_2$ is the disk
+$x^2+y^2\leq 1$ in the plane $z=0$, and whose top $S_3$ is the part of the plane
+$z=1+x$ that lies above $S_2$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+$\iint_{S_1} z = 3\pi/2$, $\iint_{S_2}z = 0$, and $\iint_{S_3} z =
+(3/2+\sqrt{2})\pi$.
+}
+
+\subsubsection{Oriented Surfaces}
+
+\content{
+\begin{definition} An oriented surface is a surface on which it is possible to
+choose a unit normal vector $\vec{n}$ at every point so that $\vec{n}$ varies
+continuously over $S$. 
+\end{definition}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+}{% comments
+Mention that all of the surfaces we look at in this course will be orientable,
+but nonorientable surfaces do exist (Mobius strip)
+}
+
+\subsubsection{Surface Integrals of Vector Fields and Flux}
+
+\content{
+
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+Go over how the flux integral is derived the amount of flow through the surface
+$S$ in the direction of $\vec{n}$ (normal vector) in a small $(u,v)$ rectangle
+on the surface is approximately equal to 
+$$ \vec{F}\cdot \vec{n} A(S_{ij}) $$
+Leading us to 
+$$ \iint_S \vec{F}\cdot \vec{n}\, dS$$
+}
+
+\content{
+\begin{definition} If $\vec{F}$ is a continuous vector field defined on an
+oriented surface $S$ with unit normal vector $\vec{n}$, then the usrface
+integral of $\vec{F}$ over $S$ is 
+$$ \iint_S \vec{F}\cdot d\vec{S} = \iint_S \vec{F}\cdot \vec{n}\,dS. $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+Go over how this simplifies to 
+$$ \iint_D \vec{F}\cdot (\vec{r}_u\times \vec{r}_v)\,dA $$ 
+if the surface is parametrized by $\vec{r}(u,v)$.
+}
+
+\content{
+\begin{example} Find the flux of the vector field $\vec{F}(x,y,z) = \la z, y,
+x\ra$ across the unit sphere $x^2+y^2+z^2=1$.
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+}{% comments
+As previously computed, for this example 
+$\vec{r}_\theta\times\vec{r}_\phi =\la \sin^2\phi\cos\theta,
+\sin^2\phi\sin\theta, \sin\phi\cos\phi\ra. $
+
+Mention that in some cases, the surface may have to be treated in parts, just as
+a previous example of a scalar surface integral. 
+}
