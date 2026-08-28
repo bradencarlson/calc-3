@@ -13,6 +13,7 @@ $\vec{b} =\langle 2,-1,1\rangle$, compute $\vec{a}\cdot \vec{b}$.
 }{% presentation
 \vspace{1in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 }
 
@@ -33,6 +34,7 @@ $\vec{c}$ are vectors in $\R^3$ and $c$ is a scalar, then
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 Maybe provide a proof of 1 and 3.
 }
@@ -45,9 +47,11 @@ $$ \vec{a}\cdot \vec{b} = |\vec{a}||\vec{b}|\cos\theta. $$
 }{% presentation
 \vspace{1in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
-In the space below, solve this equation for $\cos\theta$, since this is the
-primary way that we will compute the angle between vectors. 
+Prove this quickly. Draw a triangle with sides $\vec{a}$ and $\vec{b}$ and apply
+the law of cosines: $c^2 = a^2 + b^2 -2ab\cos(\theta)$, where
+$c=|\vec{a}-\vec{b}|$.
 }
 
 \content{
@@ -57,6 +61,7 @@ and $\vec{b} = \la 5,-3,2\ra $.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 }
 
@@ -67,8 +72,38 @@ is zero.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Either prove this using the formula above, or use the Pythagorean Theorem. 
+}
+
+\subsubsection{Direction Angles}
+
+\content{
+\begin{definition}
+The direction angles of a nonzero vector $\vec{a}$ are the angles $\alpha$,
+$\beta$, $\gamma$ (all in the interval $[0,\pi]$) that $\vec{a}$ makes with the
+positive $x$, $y$, and $z$-axes, respectively. 
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+\vspace{1in}
+}{% comments
+Draw the picture of an angle in the first octant.  Use the angle formula above
+with the vectors $i$, $j$, and $k$ to derive formulas for the cosines of these
+angles. Notice that squaring and summing these formulas gives an equality.
+}
+
+\content{
+\begin{example}
+Find the direction angles of the vector $\vec{a}=\la 1,2,3\ra$.
+\end{example}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+\vspace{1in}
+}{% comments
 }
 
 \subsubsection{Projections}
@@ -81,6 +116,7 @@ projection of $\vec{a}$ onto $\vec{b}$.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 Draw both vectors $\vec{a}$ and $\vec{b}$ from the same starting point, then
 drop the perpendicular from $\vec{a}$ onto $\vec{b}$ and derive the projection
@@ -96,7 +132,9 @@ the vector $\vec{b}=\la -2,3,1\ra$.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
+$$ \la -\frac{3}{7}, \frac{9}{14}, \frac{3}{14}\ra $$
 }
 
 \content{
@@ -111,6 +149,6 @@ the horizontal. Find the work done by the force.
 Set up a diagram, then when the triangle is drawn, use the fact that work is
 force times distance to derive the formula 
 $$ W = \vec{F}\cdot \vec{D}$$ 
-where $\vec{F}$ is the force vector being applied and $\vec{D}$ is the direction
-with magnitude 100. 
+where $\vec{F}$ is the force vector being applied and $\vec{D}$ is the
+displacement vector.
 }
