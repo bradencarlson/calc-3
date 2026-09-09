@@ -1,78 +1,73 @@
-\subsection{Vector Functions}
+\subsection{Cylinders and Quadric Surfaces}
 
 \content{
-\begin{definition} A vector function is a function which takes in each element
-in it's domain, and returns a vector.
-\end{definition}
-
-In general, a vector function whose domain is the real numbers, and whose range
-is the set of 3-dimensional vectors takes the form 
-$$ \vec{r}(t) = \la f(t), g(t), h(t)\ra. $$
-
-\begin{example} If 
-$$ \vec{r}(t) = \la t^3, \ln(3-t), \sqrt{t}\ra, $$
-find the domain of $\vec{r}$. 
-\end{example}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-By convention, the domain of a vector valued function is the set of all real
-vectors for which it is defined. 
-}
-
-\content{
-\begin{theorem} If $\vec{r}(t)=\la f(t),g(t),h(t)\ra$ is a vector valued
-function, then
-$$ \lim_{t\rightarrow a} \vec{r}(t) = \la \lim_{t\rightarrow a}f(t), 
-\lim_{t\rightarrow a}g(t), \lim_{t\rightarrow a}h(t)\ra. $$
-\end{theorem}
-
-\begin{example} Find $\lim_{t\rightarrow 0} \vec{r}(t)$ where 
-$$ \vec{r}(t) = \la 1+t^3, te^{-t}, \frac{\sin t}{t}\ra. $$
-\end{example}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{definition} A vector function $\vec{r}(t)$ is said to be continuous at
-$a$ if 
-$$ \lim_{t\rightarrow a}\vec{r}(t) = \vec{r}(a). $$
+\begin{definition} A cylinder is a surface that consists of all lines that are
+parllel to a given line and pass through a given plane curve. 
 \end{definition}
 }{% presentation
+\vspace{4in}
 }{% nopresentation
+\vspace{4in}
 }{% comments
+Give several examples, including a regular cylinder, and also some other
+cylinders. 
+
+Note that these are infinitly tall, or long. 
 }
 
 \content{
-\begin{example} Describe the curve defined by the equation 
-$$ \vec{r}(t) = \la 1+2t, 2-t, -1+6t\ra. $$
+\begin{definition} A quadric surface is the graph of a second-degree equation in three
+variables. 
+\end{definition}
+
+\begin{example} Use traces to sketch the quadric surface with equation 
+$$ x^2 + \frac{y^2}{9}+\frac{z^2}{4}=1. $$
 \end{example}
 }{% presentation
-\vspace{2in}
+\vspace{4in}
 }{% nopresentation
+\vspace{4in}
 }{% comments
+Level curves are elipses, as long as $|z|\leq 4$.
+
+This surface is known as an ellipsoid. 
 }
 
 \content{
-\begin{example} Sketch the curve defined by 
-$$\vec{r}(t) =  \la \cos t, \sin t, t\ra. $$
+\begin{example} Sketch the surface 
+$$ z=4x^2+y^2.$$
 \end{example}
 }{% presentation
-\vspace{2in}
+\vspace{4in}
 }{% nopresentation
+\vspace{4in}
 }{% comments
+This surface is known as an elliptic paraboloid. 
 }
 
 \content{
-\begin{example} Find a vector function that represents the curve of intersection
-between the cylinder $x^2+y^2=1$ and the plane $y+z=2$. 
+\begin{example} Sketch the surface
+$$ \frac{x^2}{4}+y^2-\frac{z^2}{4} = 1. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+\vspace{4in}
+}{% comments
+This surface is a hyperboloid of one sheet. 
+}
+
+
+\content{
+\begin{example}
+Sketch the surface defined by theh equation 
+$$ 4x^2 - y^2 + 2z^2  + 4 = 0. $$
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{3in}
 }{% comments
+\textbf{There is a table of quadric surfaces to see in the book.}
 }
+
