@@ -16,6 +16,7 @@ find the domain of $\vec{r}$.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 By convention, the domain of a vector valued function is the set of all real
 vectors for which it is defined. 
@@ -34,6 +35,7 @@ $$ \vec{r}(t) = \la 1+t^3, te^{-t}, \frac{\sin t}{t}\ra. $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 }
 
@@ -45,6 +47,8 @@ $$ \lim_{t\rightarrow a}\vec{r}(t) = \vec{r}(a). $$
 }{% presentation
 }{% nopresentation
 }{% comments
+Note that a vector function is continuous at a point $a$ if and only if its
+component functions are continuous there.
 }
 
 \content{
@@ -54,7 +58,9 @@ $$ \vec{r}(t) = \la 1+2t, 2-t, -1+6t\ra. $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
+This is simply a line.
 }
 
 \content{
@@ -64,6 +70,7 @@ $$\vec{r}(t) =  \la \cos t, \sin t, t\ra. $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
 
@@ -74,105 +81,19 @@ between the cylinder $x^2+y^2=1$ and the plane $y+z=2$.
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
-}
-\subsection{Calculus with Vector Functions}
-
-\content{
-\begin{definition} If $\vec{r}(t)$ is a vector function, it's derivative is
-defined by 
-$$ \vec{r}'(t) = \lim_{h\rightarrow 0} \frac{\vec{r}(t+h)-\vec{r}(t)}{h}. $$
-Provided that this limit exists. 
-\end{definition}
-}{% presentation
-}{% nopresentation
-}{% comments
+Notice that we may use $x =\cos t$ and $y=\sin t$. Plug these in to find $z$.
 }
 
-\content{
-\begin{theorem} If $\vec{r}(t) = \la f(t), g(t), h(t)\ra$, and $f$, $g$, and $h$
-are differentiable, then 
-$$\vec{r}'(t) = \la f'(t), g'(t), h'(t)\ra. $$
-\end{theorem}
-
-\begin{definition} The unit vector with the same direction as the tangent vector
-to $\vec{r}(t)$ is called the unit tangent vector and is given by 
-$$ \vec{T}(t) = \frac{\vec{r}(t)}{|\vec{r}(t)|}. $$
-\end{definition}
-}{% presentation
-}{% nopresentation
-}{% comments
-}
 
 \content{
-\begin{example} Find the derivative of $\vec{r}(t) = \la 1+t^3, te^{-t}, \sin
-2t\ra,$ and find the unit tangent vector at the point $t=0$.
+\begin{example} Find a vector function that represents the curve of intersection
+of the paraboloid $4y = x^2 + z^2$ and the plane $x=y$.
 \end{example}
 }{% presentation
 \vspace{2in}
 }{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{theorem} Suppose $\vec{u}$ and $\vec{v}$ are differentiable vector valued
-functions, and $c$ is a scalar, and $f(t)$ is a real valued function, then 
-\begin{itemize}
-\item $\frac{d}{dt}(\vec{u}+\vec{v}) = \vec{u}'(t) + \vec{v}'(t)$
-\item $\frac{d}{dt}(c\vec{u}(t)) = c\vec{u}'(t)$
-\item $\frac{d}{dt}(f(t)\vec{u}(t)) = f(t)\vec{u}'(t) + f'(t)\vec{u}(t)$
-\item $\frac{d}{dt}(\vec{u}(t)\cdot \vec{v}(t)) = \vec{u}'(t)\cdot \vec{v}(t) +
-\vec{u}(t)\cdot \vec{v}'(t)$
-\item $\frac{d}{dt}(\vec{u}(t)\times\vec{v}(t)) = \vec{u}'(t)\times\vec{v}(t) +
-\vec{u}(t)\times\vec{v}'(t)$
-\item $\frac{d}{dt}(\vec{u}(f(t))) = f'(t)\vec{u}'(f(t))$
-\end{itemize}
-\end{theorem}
-}{% presentation
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{theorem} If $|\vec{r}(t)|=c$ is a constant for all $t$, then
-$\vec{r}'(t)$ is orthogonal to $\vec{r}(t)$ for all $t$. 
-\end{theorem}
-}{% presentation
 \vspace{2in}
-}{% nopresentation
-}{% comments
-Start with $\vec{r}(t)\cdot\vec{r}(t) = c^2$, then use the previous theorem to
-compute $\frac{d}{dt}(\vec{r}(t)\cdot \vec{r}(t))$.
-}
-
-\content{
-\begin{example} Compute the derivative of the vector valued function defined by 
-$$ \vec{r}(t) = \sin(t)\cdot \la 1,t, e^t\ra. $$
-\end{example}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-}
-
-\content{
-The integral of a vector valued function is similarly computed: If
-$\vec{r}(t)=\la f(t), g(t), h(t)\ra$, and each of $f$, $g$, and $h$ is
-integrable on $[a,b]$, then 
-$$ \int_a^b \vec{r}(t) dt = \la \int_a^b f(t)dt, \int_a^b g(t)dt, \int_a^b
-h(t)dt \ra. $$
-}{% presentation
-}{% nopresentation
-}{% comments
-}
-
-\content{
-\begin{example}
-Compute the indefinite integral of the vector valued function 
-$$ \vec{r}(t) = \la 2\cos t, \sin t, 2t\ra. $$
-\end{example}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
 }{% comments
 }
