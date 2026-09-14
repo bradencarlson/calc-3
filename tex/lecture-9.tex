@@ -33,6 +33,7 @@ $$ \vec{T}(t) = \frac{\vec{r}(t)}{|\vec{r}(t)|}. $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
 
@@ -62,9 +63,13 @@ $\vec{r}'(t)$ is orthogonal to $\vec{r}(t)$ for all $t$.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Start with $\vec{r}(t)\cdot\vec{r}(t) = c^2$, then use the previous theorem to
 compute $\frac{d}{dt}(\vec{r}(t)\cdot \vec{r}(t))$.
+
+Geometrically, this means that if the curve $\vec{r}$ lies on the surface of a
+sphere, the tangent vector is always tangent to the sphere.
 }
 
 \content{
@@ -74,6 +79,7 @@ $$ \vec{r}(t) = \sin(t)\cdot \la 1,t, e^t\ra. $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
 
@@ -100,6 +106,15 @@ $$ \vec{r}(t) = \la 2\cos t, \sin t, 2t\ra. $$
 }
 \subsection{Arc Length}
 
+
+\content{
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+Derive arc length formula.
+}
 
 \content{
 \begin{definition} Given a vector valued fuction $\vec{r}(t)$, defined on an
@@ -137,66 +152,25 @@ $$ s(t) = \int_a^t |\vec{r}(u)|\, du. $$
 Note that by the fundamental Theorem of Calculus, we have that 
 $\frac{ds}{dt} = |\vec{r}(t)|$. 
 
-It will sometimes be usefull to reparametrize the function $\vec{r}(t)$ in terms
+Why would this be useful? $s(t)$ is independent of paramtrization and coordinate
+system!
+
+It will sometimes be useful to reparametrize the function $\vec{r}(t)$ in terms
 of it's arc length: if $s(t)$ is the arc length function, we might be able to
 solve for $t$, that is find a function $t=t(s)$, then the point $\vec{r}(t(3))$
 is the point where the particle has traveled 3 units of length from it's
 starting point. 
 }
 
-\subsubsection{The Tangent, Normal, and Binormal Vectors}
-
 \content{
-\begin{definition} Given a vector valued function $\vec{r}(t)$ the unit tangent
-vector is given by 
-$$ \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}. $$
-\end{definition}
-}{% presentation
-\vspace{1in}
-}{% nopresentation
-}{% comments
-This is simply a unit vector in the same direction as the tangent vector to
-$\vec{r}(t)$.
-}
-
-\content{
-\begin{definition}
-Given a vector valued function $\vec{r}(t)$, the unit normal vector is given by 
-$$ \vec{N}(t) = \frac{\vec{T}'(t)}{|\vec{T}'(t)|}. $$
-\end{definition}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-Since $|\vec{T}(t)|=1$ for all $t$, $\vec{T}'(t)$ is orthogonal to $\vec{T}(t)$.
-Thus this vector can be thought of as the direction that the particle is turning
-at time $t$.
-}
-
-\content{
-\begin{definition}
-Given a vector valued function $\vec{r}(t)$, the binormal vector $\vec{B}(t)$ is
-given by 
-$$ \vec{B}(t) = \vec{T}(t)\times \vec{N}(t). $$
-\end{definition}
-}{% presentation
-\vspace{2in}
-}{% nopresentation
-}{% comments
-This vector is orthogonal to both $\vec{T}(t)$ and $\vec{N}(t)$, and is also a
-unit vector. 
-
-Draw a picture of how this gives a basis (called the TNB basis), which is
-important to differential geometry and applications to the motion of spacecraft. 
-}
-
-\content{
-\begin{example} Find the unit normal vector and binormal vectors for the
-function 
-$$ \vec{r}(t) = \la \cos t, \sin t, t\ra. $$
+\begin{example}
+Reparametrize the helix $\vec{r}(t) = \la \cos t, \sin t, t\ra$ with respect to
+arc length measured from the point $t=0$.
 \end{example}
 }{% presentation
-\vspace{5in}
+\vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
+Arive at $s = \sqrt{2} t$, then substitute into original equation.
 }

@@ -1,3 +1,59 @@
+\subsubsection{The Tangent, Normal, and Binormal Vectors}
+
+\content{
+\begin{definition} Given a vector valued function $\vec{r}(t)$ the unit tangent
+vector is given by 
+$$ \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}. $$
+\end{definition}
+}{% presentation
+\vspace{1in}
+}{% nopresentation
+}{% comments
+This is simply a unit vector in the same direction as the tangent vector to
+$\vec{r}(t)$.
+}
+
+\content{
+\begin{definition}
+Given a vector valued function $\vec{r}(t)$, the unit normal vector is given by 
+$$ \vec{N}(t) = \frac{\vec{T}'(t)}{|\vec{T}'(t)|}. $$
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+Since $|\vec{T}(t)|=1$ for all $t$, $\vec{T}'(t)$ is orthogonal to $\vec{T}(t)$.
+Thus this vector can be thought of as the direction that the particle is turning
+at time $t$.
+}
+
+\content{
+\begin{definition}
+Given a vector valued function $\vec{r}(t)$, the binormal vector $\vec{B}(t)$ is
+given by 
+$$ \vec{B}(t) = \vec{T}(t)\times \vec{N}(t). $$
+\end{definition}
+}{% presentation
+\vspace{2in}
+}{% nopresentation
+}{% comments
+This vector is orthogonal to both $\vec{T}(t)$ and $\vec{N}(t)$, and is also a
+unit vector. 
+
+Draw a picture of how this gives a basis (called the TNB basis), which is
+important to differential geometry and applications to the motion of spacecraft. 
+}
+
+\content{
+\begin{example} Find the unit normal vector and binormal vectors for the
+function 
+$$ \vec{r}(t) = \la \cos t, \sin t, t\ra. $$
+\end{example}
+}{% presentation
+\vspace{5in}
+}{% nopresentation
+}{% comments
+}
 % TODO: Add much much more!
 \subsection{Motion in Space}
 
