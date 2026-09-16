@@ -1,3 +1,50 @@
+\subsection{Curvature and TNB Vectors}
+
+\subsubsection{Curvature}
+
+
+\content{
+\begin{definition} A parametrization of a curve $\vec{r}(t)$ is called smooth if
+$\vec{r}'(t)$ is continuous and $\vec{r}'(t)\neq \vec{0}$. A curve is called
+smooth if it has a smooth parametrization. 
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+A smooth curve has no sharp corners or cusps. When it turns the tangent vectors
+turns continuously. 
+}
+
+\content{
+\vspace{2in}
+\begin{definition}
+The curvature of a curve $\vec{r}'(t)$ is defined to be the number 
+$$ \kappa = \left| \frac{d\vec{T}}{ds}\right| $$
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+Draw a curve, then notice that where the curve does not turn a lot, the change
+in tangent vector is very small. 
+Notice that we can also use the chain rule to rewrite this in terms of the
+parametrization $\vec{r}'(t)$: 
+$$ \frac{d\vec{T}}{dt} = \frac{d\vec{T}}{ds}\frac{ds}{dt} $$
+and we can use the fundamental theorem of calculus to find $\frac{ds}{dt}$.
+}
+
+
+\content{
+\begin{example}
+Find the curvature of a circle of radius $a$. 
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+curvature is $1/a$.
+}
+
 \subsubsection{The Tangent, Normal, and Binormal Vectors}
 
 \content{
@@ -8,6 +55,7 @@ $$ \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}. $$
 }{% presentation
 \vspace{1in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 This is simply a unit vector in the same direction as the tangent vector to
 $\vec{r}(t)$.
@@ -21,6 +69,7 @@ $$ \vec{N}(t) = \frac{\vec{T}'(t)}{|\vec{T}'(t)|}. $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 Since $|\vec{T}(t)|=1$ for all $t$, $\vec{T}'(t)$ is orthogonal to $\vec{T}(t)$.
 Thus this vector can be thought of as the direction that the particle is turning
@@ -36,6 +85,7 @@ $$ \vec{B}(t) = \vec{T}(t)\times \vec{N}(t). $$
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{1in}
 }{% comments
 This vector is orthogonal to both $\vec{T}(t)$ and $\vec{N}(t)$, and is also a
 unit vector. 
@@ -52,9 +102,10 @@ $$ \vec{r}(t) = \la \cos t, \sin t, t\ra. $$
 }{% presentation
 \vspace{5in}
 }{% nopresentation
+\vspace{3in}
 }{% comments
 }
-% TODO: Add much much more!
+
 \subsection{Motion in Space}
 
 \content{
@@ -62,6 +113,7 @@ $$ \vec{r}(t) = \la \cos t, \sin t, t\ra. $$
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 demonstrate how the derivative of a vector valued function is the tanged vector,
 which is the direction of motion of a particle traveling along $\vec{r}(t)$. 
