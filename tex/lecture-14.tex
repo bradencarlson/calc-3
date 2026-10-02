@@ -4,19 +4,23 @@
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Derive the equation of the tangent plane. This ends up being 
 $$ z-z_0 = f_x(a,b)(x-a)+f_y(a,b)(y-b). $$
 }
 
 \content{
-\begin{example} Find the tangent plane to the elliptic paraloloid 
-$$ z = 2x^2+y^2. $$
+\begin{example} Find the tangent plane to the elliptic paraboloid 
+$$ z = 2x^2+y^2 $$
+at the point $(1,1,3)$.
 \end{example} 
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
+$z-3=4(x-1)+2(y-1)$
 }
 
 \content{
@@ -28,47 +32,88 @@ $$ f(x,y) = xe^{xy}. $$
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
+\newpage
 }{% comments
 approx. $1.1e^{-0.11} \approx 0.98542$.
-}
-
-\subsubsection{Differentials}
-
-\content{
-Recall that for functions of a single variable, we have that the differential
-$dy$ is given by 
-$$ dy = f'(x)dx. $$
-We have a similar definition for functions of two variables: 
-\begin{definition} We define the differential $dz$, also called the total
-differential, to be the value 
-$$ dz = f_x(x,y)dx + f_y(x,y)dy=\frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy. $$
-\end{definition}
-The Linearization of $f$ at $(a,b)$ can then be written 
-$$ f(x,y) \approx f(a,b) + dz. $$
-}{% presentation
-}{% nopresentation
-}{% comments
+Write out linearization of $f$ near a point formula!
 }
 
 \content{
-\begin{example} If 
-$$ z = f(x,y) = x^2+3xy - y^2, $$
-find the differential $dz$.
+\begin{example}
+Use a tangent plane to approximate the value of $\sqrt{3.05^2 + 3.97^2}$.
 \end{example}
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
+}{% comments
+Use function $f(x,y) = \sqrt{x^2+y^2}$.
+}
+
+\content{
+What happens when the partial derivatives are not continuous at the point
+$(a,b)$?
+\begin{example}
+Let
+$$f(x,y) = \begin{cases} \frac{xy}{x^2+y^2} & (x,y) \neq (0,0) \\
+0  & (x,y) = 0.
+\end{cases} $$ 
+Find the first partial derivatives of $f$ at
+the point $(0,0)$. What would the linearization of $f$ be at the origin? Is this
+a good approximation? 
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+}
+
+
+\content{
+Linear appoximations really only make sense for differentiable functions.
+\begin{definition}
+Let $ \Delta y = f(a+\Delta x) - f(a)$. The function $f(x)$ is said to be differentiable at $a$ if
+there exists a function $\epsilon$ such that 
+$$ \Delta y = f'(a) \Delta x + \epsilon \Delta x $$
+where $\epsilon \rightarrow 0 $ as $\Delta x\rightarrow 0$.
+\end{definition}
+
+For functions of two variables, we have 
+\begin{definition}
+Let $ \Delta z = f(a+\Delta x, b + \Delta y) - f(a,b)$. The function $f(x,y)$ is
+said to be differentiable at $(a,b)$ if
+there exists a functions $\epsilon_1$ and $\epsilon_2$ such that 
+$$ \Delta z = f_x(a,b) \Delta x + f_y(a,b)\Delta y +  \epsilon_1 \Delta x +
+\epsilon_2\Delta y $$
+where $\epsilon \rightarrow 0 $ as $\Delta x\rightarrow 0$.
+\end{definition}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
+\content{
+\begin{theorem}
+If $f_x$ and $f_y$ both exist near $(a,b)$ and are continuous at $(a,b)$, then
+$f$ is differentiable at the point $(a,b)$.
+\end{theorem}
+}{% presentation
+}{% nopresentation
+\newpage
 }{% comments
 }
 
 \content{
 \begin{example} The baes radius and height of a right circular cone are measured
 as 10 cm and 25 cm, respectively, with a possible error in measurement of as
-much as 0.01 cm in each. Use differentials to estimate the maximum error in the
+much as 0.01 cm in each. Use a tangent plane to estimate the maximum error in the
 calculated volume of the cone. 
 \end{example}
 }{% presentation
 \vspace{4in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
