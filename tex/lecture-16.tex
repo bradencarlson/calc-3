@@ -1,3 +1,30 @@
+\subsubsection{Implicit Differentiation}
+
+\content{
+We can use the chain rule to obtain an application to implicit differentiation
+from Calculus I:
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+Write out $F(x,y) = 0$, and assume that $y=y(x)$, and use the chain rule to
+obtain 
+$$ \frac{\partial F}{\partial x}\frac{dx}{dx} + \frac{\partial F}{\partial y}\frac{dy}{dx} = 0.
+$$
+Then since $\frac{dx}{dx}=1$, we can solve for $\frac{dy}{dx}$.
+}
+
+\content{
+\begin{example} Find $y'$ if $x^3+y^3 = 6xy$.
+\end{example}
+}{% presentation
+\vspace{3in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+}
+
 \subsection{Directional Derivatives and The Gradient Vector}
 
 \content{
@@ -5,6 +32,7 @@
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Demonstrate what the directional derivative means geometricaly, by drawing a
 diagram with both partial derivatives on it, then a directional derivative at
@@ -19,6 +47,7 @@ $$ D_{\vec{u}}f(x_0,y_0) = \lim_{h\rightarrow 0}
 \end{definition}
 }{% presentation
 }{% nopresentation
+\newpage
 }{% comments
 }
 
@@ -31,6 +60,7 @@ $$ D_{\vec{u}}f(x,y) = f_x(x,y)a+f_y(x,y)b. $$
 }{% presentation
 \vspace{4in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Prove this by 
 }
@@ -59,6 +89,8 @@ find the directional derivative of $f$ at the point $(0,0)$ in the direction $\v
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
+\newpage
 }{% comments
 First have to make $\vec{u}$ a unit vector!
 }
@@ -70,6 +102,7 @@ directional derivative of $f$ at (1,3,0) in the direction of $\la 1,2,-1\ra$.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
 
@@ -81,6 +114,7 @@ direction of the gradient of $f$, and it's value is $|\nabla f|$.
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Prove this by using the dot product formula for the directional derivative, and
 the fact that 
@@ -100,6 +134,7 @@ $$ \pd{F}{x}(x_0,y_0,z_0)(x-x_0) + \pd{F}{y}(x_0,y_0,z_0)(y-y_0) +
 }{% presentation
 \vspace{2in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Sketch a quick picture of a  surface (level curve) and demonstrate that the
 gradient is perpendicular to the surface at the given point, so the tangent
@@ -114,6 +149,7 @@ at the point $(-2,1,-3)$.
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Final plane is given by 
 $$ -1(x+2)+2(y-1) -\frac{2}{3}(z+3) = 0. $$
