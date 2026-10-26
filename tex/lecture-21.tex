@@ -1,3 +1,47 @@
+\subsubsection{Changing the Order of Integration}
+
+\content{
+\begin{example} Evaluate the integral 
+$$ \int_0^1\int_x^1 \sin(y^2) dydx. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+Draw a diagram of the region to switch the bounds to $x$ first. 
+}
+
+\content{
+\begin{example} Evaluate the integral 
+$$ \int_0^1\int_{3y}^3 e^{x^2} \, dxdy. $$
+\end{example}
+}{% presentation
+\vspace{4in}
+}{% nopresentation
+\vspace{2in}
+}{% comments
+}
+
+\content{
+\begin{theorem} (Properties of Double Integrals) 
+\begin{enumerate} 
+\item $\iint_D (f_1(x,y) + f_2(x,y))\,dA = \iint_D f_1(x,y)\,dA + \iint_D
+f_2(x,y)\, DA. $
+\item $\iint_D cf(x,y)\,dA = c\iint_D f(x,y)\,dA. $
+\item $\iint_D f(x,y)\, dA = \iint_{D_1} f(x,y)\,dA + \iint_{D_2} f(x,y)\,dA $,
+where $D =D_1\cup D_2$ and $D_1$ and $D_2$ do not overlap, except possibly on
+their boundaries. 
+\item $\iint_D 1\, dA = A(D)$. 
+\item If $m\leq f(x,y)\leq M$ on $D$, then 
+$mA(D)\leq \iint_D f(x,y)\, dA\leq MA(D). $
+\end{enumerate}
+\end{theorem}
+}{% presentation
+}{% nopresentation
+}{% comments
+}
+
 \subsection{Double Integrals in Polar Coordinates}
 
 
@@ -6,6 +50,7 @@
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Review polar coordinates, go over how the extra r shows up in the integration:
 \begin{enumerate}
@@ -40,6 +85,7 @@ $x^2+y^2=1$ and $x^2+y^2=4$.
 }{% presentation
 \vspace{4in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
 
@@ -50,6 +96,8 @@ surface $z=1-x^2-y^2$.
 }{% presentation
 \vspace{3in}
 }{% nopresentation
+\vspace{2in}
+\newpage
 }{% comments
 }
 
@@ -60,6 +108,7 @@ one loop of the function $r=\cos 2\theta$.
 }{% presentation
 \vspace{4in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 }
 
@@ -70,11 +119,9 @@ $x^2+y^2=2x$ and between the $xy$-plane and the surface $z=x^2+y^2$.
 }{% presentation
 \vspace{4in}
 }{% nopresentation
+\vspace{2in}
 }{% comments
 Complete the square in the cylinder equation to find it's center and radius
 then set $x=r\cos\theta$ and substitute this into the cylinder equation (and
 $r^2=x^2+y^2$)
-
-Mention that we will be skipping 15.4, which contains many applications of
-double integrals. 
 }
